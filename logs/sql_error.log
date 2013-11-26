@@ -1,0 +1,9 @@
+[2013-11-27 02:05:11][9379][8131][ERROR][SQL Error: Access denied for user 'root'@'localhost' (using password: NO) at /home/mig/www/loc/maket2/engine/modules/database/Database.class.php line 72<br>
+Array
+(
+    [code] => 1045
+    [message] => Access denied for user 'root'@'localhost' (using password: NO)
+    [query] => mysql_connect()
+    [context] => /home/mig/www/loc/maket2/engine/modules/database/Database.class.php line 72
+)
+]
