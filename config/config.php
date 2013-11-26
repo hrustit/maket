@@ -2,7 +2,7 @@
 /*-------------------------------------------------------
 *
 *   LiveStreet Engine Social Networking
-*   Copyright © 2008 Mzhelskiy Maxim
+*   Copyright © 2013 Mzhelskiy Maxim
 *
 *--------------------------------------------------------
 *
