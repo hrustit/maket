@@ -2,3 +2,4 @@ templates/compiled/*
 templates/cache/*
 tmp/*
 log/*
+config/config.local.php
