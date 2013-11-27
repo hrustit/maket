@@ -25,14 +25,14 @@
 $config['db']['params']['host'] = 'localhost';
 $config['db']['params']['port'] = '3306';
 $config['db']['params']['user'] = 'root';
-$config['db']['params']['pass'] = 'qs11';
+$config['db']['params']['pass'] = '';
 $config['db']['params']['type']   = 'mysql';
 $config['db']['params']['dbname'] = 'maket2';
 $config['db']['table']['prefix'] = 'prefix_';
 
-$config['path']['root']['web'] = 'http://loc/maket2';
-$config['path']['root']['server'] = '/home/mig/www/loc/maket2';
-$config['path']['offset_request_url'] = '1';
+$config['path']['root']['web'] = 'http://maket';
+$config['path']['root']['server'] = 'X:\home\maket\www';
+$config['path']['offset_request_url'] = '0';
 $config['db']['tables']['engine'] = 'InnoDB';
 return $config;
 ?>

@@ -1,3 +1,4 @@
-templates/compiled/
-templates/cache/
-tmp/
+templates/compiled/*
+templates/cache/*
+tmp/*
+log/*

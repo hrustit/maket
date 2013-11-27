@@ -7,3 +7,39 @@ Array
     [context] => /home/mig/www/loc/maket2/engine/modules/database/Database.class.php line 72
 )
 ]
+[2013-11-27 12:34:14][4724][1863][ERROR][SQL Error: Table 'maket2.prefix_adminset' doesn't exist at X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'maket2.prefix_adminset' doesn't exist
+    [query] => SELECT adminset_val FROM prefix_adminset WHERE adminset_key = 'version' 
+    [context] => X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33
+)
+]
+[2013-11-27 12:34:14][4724][1863][ERROR][SQL Error: Table 'maket2.prefix_adminset' doesn't exist at X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 28<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'maket2.prefix_adminset' doesn't exist
+    [query] => SELECT adminset_key AS `key`, adminset_val AS `val` FROM prefix_adminset WHERE adminset_key LIKE 'config.all.%' 
+    [context] => X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 28
+)
+]
+[2013-11-27 12:34:23][4724][9169][ERROR][SQL Error: Table 'maket2.prefix_adminset' doesn't exist at X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'maket2.prefix_adminset' doesn't exist
+    [query] => SELECT adminset_val FROM prefix_adminset WHERE adminset_key = 'version' 
+    [context] => X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33
+)
+]
+[2013-11-27 12:34:57][4724][8260][ERROR][SQL Error: Table 'maket2.prefix_adminset' doesn't exist at X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'maket2.prefix_adminset' doesn't exist
+    [query] => SELECT adminset_val FROM prefix_adminset WHERE adminset_key = 'version' 
+    [context] => X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33
+)
+]
