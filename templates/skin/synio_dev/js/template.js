@@ -431,8 +431,8 @@ jQuery(document).ready(function($){
 		var trigger = $('#dropdown-user-trigger');
 		var menu 	= $('#dropdown-user-menu');
 		var pos 	= $('#dropdown-user').offset();
-
-		menu.appendTo('body').css({ 'left': pos.left, 'top': $('#dropdown-user').height() - 1, 'min-width': $('#dropdown-user').outerWidth(), 'display': 'none' });
+//Положение выпадающего меню изменяется здесь!!!
+		menu.appendTo('body').css({ 'left': pos.left - 50, 'top': $('#dropdown-user').height() - 20, 'min-width': $('#dropdown-user').outerWidth(), 'display': 'none' });
 
 		trigger.click(function(){
 			menu.slideToggle();

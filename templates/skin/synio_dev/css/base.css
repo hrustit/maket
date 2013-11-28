@@ -105,7 +105,7 @@ h2.header-table span { color: #949aa1; }
 .dropdown-user-menu li.item-stat .icon-synio-star-small { position: relative; top: 2px; }
 .dropdown-user-menu li.item-stat .icon-synio-strength 	{ position: relative; top: 1px; }
 .dropdown-user-menu li a 	{ display: block; zoom: 1; *width: 138px; height: 50px; padding: 0 10px 0 55px; line-height: 50px; color: #464646; text-decoration: none; }
-.dropdown-user-menu li a:hover 	{ background: #d0d0d0; color: #fff; }
+.dropdown-user-menu li a:hover 	{ background: #1c879d; color: #fff; }
 .dropdown-user-menu li .item-icon 	{ position: absolute; top: 15px; left: 17px; width: 21px; height: 21px; background: url(../images/icons-synio.png) no-repeat; }
 .dropdown-user-menu li.item-messages .item-icon     { background-position: 0 0; }
 .dropdown-user-menu li.item-profile .item-icon      { background-position: -23px 0; }
@@ -114,6 +114,8 @@ h2.header-table span { color: #949aa1; }
 .dropdown-user-menu li.item-signout .item-icon      { background-position: -92px 0; }
 .dropdown-user-menu li.item-favourite .item-icon    { background-position: -115px 0; }
 .dropdown-user-menu li.item-messages .new           { position: absolute; top: 15px; right: 7px; cursor: pointer; color: #fff; border-radius: 15px; border: 2px solid #eabe21; line-height: 1em; padding: 2px 7px 3px; }
+.dropdown-user-menu li.item-top { overflow: visible; height: 0px;}
+.dropdown-user-menu li.item-top .item_top_img {position: relative; top: -13px; left: 143px;}
 
 #header .auth { position: absolute; top: 0; right: 0; line-height: 49px; font-size: 11px; margin-right: 17px; }
 #header .auth li { float: left; margin-left: 23px; }

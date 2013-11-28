@@ -30,6 +30,7 @@
                     <ul class="dropdown-user-menu" id="dropdown-user-menu" style="display: none">
 
 				{hook run='userbar_item_first'}
+                                <li class="item-top"><img src="{cfg name='path.static.skin'}/images/item_top.png" alt="menu" class="item_top_img"/></li>
 				<li class="item-messages">
 					<a href="{router page='talk'}" id="new_messages">
 						<i class="item-icon"></i>
