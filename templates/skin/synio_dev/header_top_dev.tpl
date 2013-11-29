@@ -35,7 +35,7 @@
 					<a href="{router page='talk'}" id="new_messages">
 						<i class="item-icon"></i>
 						{$aLang.user_privat_messages}
-						{if $iUserCurrentCountTalkNew}<div class="new">+{$iUserCurrentCountTalkNew}</div>{/if}
+						{if $iUserCurrentCountTalkNew}<div class="new">{$iUserCurrentCountTalkNew}</div>{/if}
 					</a>
 				</li>
 				<li class="item-favourite"><i class="item-icon"></i><a href="{$oUserCurrent->getUserWebPath()}favourites/topics/">{$aLang.user_menu_profile_favourites}</a></li> 
