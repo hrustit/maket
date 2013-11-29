@@ -48,7 +48,20 @@ h2.header-table span { color: #949aa1; }
 #header .site-name a 		{ color: #fff; text-decoration: none; }
 #header .site-name a:hover 	{ color: #eee; }
 
-#header .new-messages { position: absolute; top: 0; right: 205px; color: #f9de7e; font-size: 11px; margin-right: 11px; margin-top: 18px; line-height: 1em; text-decoration: none; }
+#header .new-messages { position: absolute; 
+                        top: 0; 
+                        right: 35px; 
+                        font-size: 8px; 
+                        margin-right: 0px; 
+                        margin-top: 35px; 
+                        text-decoration: none;
+                        color: #fff; 
+                        background-color: #ff0006; 
+                        border-radius: 10px; 
+                        border: 2px solid #fff; 
+                        line-height: 1em; 
+                        padding: 2px 4px 2px; 
+}
 #header .new-messages i { position: relative; top: -1px; }
 .mozilla #header .new-messages i { top: 0; }
 
@@ -77,18 +90,23 @@ h2.header-table span { color: #949aa1; }
 #header .dropdown-user .username:hover 					{ color: #aaa; }
 #header .dropdown-user .avatar 							{ position: absolute; top: 11px; right: 20px; width: 30px; height: 30px; }
 
-#header .dropdown-user .username_dev        {float: left;color: #4c759f; font-size: 16px; font-weight: bold; position: absolute; top: 2px; right: 120px; }
+#header .dropdown-user .username_dev        {min-width: 70px; float: left;color: #4c759f; font-size: 16px; font-weight: bold; position: absolute; top: 2px; right: 120px; }
 #header .dropdown-user .username_dev a{text-decoration: none; font-family: arial; color: #4c759f;}
 #header .dropdown-user .username_dev:hover  {}
 #header .dropdown-user .triangle_menu       {float: left; position: absolute; top: 2px; right: 85px; }
 #header .dropdown-user .avatar_dev          {float: left; position: absolute; top: 7px; right: 38px;}
-#header .dropdown-user .img_avatar {width: 40px; height: 40px;}
+#header .dropdown-user .img_avatar {width: 40px; 
+            height: 40px; 
+            border-radius: 5px;             
+            -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .5); 
+            box-shadow: 0 0 7px rgba(0, 0, 0, .5); 
+}
 
 .dropdown-user-menu	{ 
     position: absolute;
     background: #ffffff; 
     border: none;  
-    border-radius: 0 0 10px 10px; 
+    border-radius: 7px 7px 10px 10px; 
     -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, .5); 
     box-shadow: 0 0 7px rgba(0, 0, 0, .5); 
     z-index: 30; 
@@ -113,7 +131,7 @@ h2.header-table span { color: #949aa1; }
 .dropdown-user-menu li.item-create .item-icon       { background-position: -69px 0; }
 .dropdown-user-menu li.item-signout .item-icon      { background-position: -92px 0; }
 .dropdown-user-menu li.item-favourite .item-icon    { background-position: -115px 0; }
-.dropdown-user-menu li.item-messages .new           { position: absolute; top: 4px; right: 7px; cursor: pointer; color: #fff; background-color: #ff0006; border-radius: 15px; border: 2px solid #ff0006; line-height: 1em; padding: 2px 5px 2px; }
+.dropdown-user-menu li.item-messages .new           { position: absolute; top: 4px; right: 7px; cursor: pointer; font-size: 8px;  color: #fff; background-color: #ff0006; border-radius: 10px; border: 2px solid #ff0006; line-height: 1em; padding: 2px 5px 2px; }
 .dropdown-user-menu li.item-top { overflow: visible; height: 0px;}
 .dropdown-user-menu li.item-top .item_top_img {position: relative; top: -13px; left: 143px;}
 
@@ -122,7 +140,25 @@ h2.header-table span { color: #949aa1; }
 #header .auth li a { color: #cfcfcf; text-decoration: none; }
 #header .auth li a.sign-in { color: #7dc6ff; }
 
-
+.rating_blok{font-size: 9px; color: #34aa3f;}
+.rating_blok_left{
+    text-align: center;
+    width: 30px;
+    float: left; 
+    margin: 3px 2px 0 0; 
+    padding: 0 3px 0 3px; 
+    background-color: #eeecec;
+    border-radius: 5px 0 0 5px;
+}
+.rating_blok_right{
+    text-align: center;
+    width: 30px;
+    float: left; 
+    margin: 3px 0 0 2px; 
+    padding: 0 3px 0 3px; 
+    background-color: #eeecec;
+    border-radius: 0 5px 5px 0;
+}
 
 /* Футер
 ---------------------------------------------------- */

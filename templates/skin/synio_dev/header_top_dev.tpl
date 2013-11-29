@@ -21,7 +21,17 @@
 	
 	{if $oUserCurrent}
 		<div class="dropdown-user" id="dropdown-user">	
-                    <div class="username_dev"><a href="{$oUserCurrent->getUserWebPath()}" >{$oUserCurrent->getLogin()}</a></div>
+                    <div class="username_dev">
+                        <a href="{$oUserCurrent->getUserWebPath()}" >{$oUserCurrent->getLogin()}</a>
+                        <div class="rating_blok">
+                            <div class="rating_blok_left">
+                                <span class="strength" title="{$aLang.user_skill}">{$oUserCurrent->getSkill()}</span>
+                            </div>
+                            <div class="rating_blok_right">
+                                <span class="rating {if $oUserCurrent->getRating() < 0}negative{/if}" title="{$aLang.user_rating}">{$oUserCurrent->getRating()}</span>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="dropdown-user-trigger" id="dropdown-user-trigger"><img src="{cfg name='path.static.skin'}/images/triangle.png" alt="menu" /></div>
                     <div class="avatar_dev"><a href="{$oUserCurrent->getUserWebPath()}"><img src="{$oUserCurrent->getProfileAvatarPath(48)}" alt="avatar" class="img_avatar" /></a></div>	
@@ -31,6 +41,8 @@
 
 				{hook run='userbar_item_first'}
                                 <li class="item-top"><img src="{cfg name='path.static.skin'}/images/item_top.png" alt="menu" class="item_top_img"/></li>
+				<li class="item-profile"><i class="item-icon"></i><a href="{$oUserCurrent->getUserWebPath()}">{$aLang.footer_menu_user_profile}</a></li>
+				<li class="item-settings"><i class="item-icon"></i><a href="{router page='settings'}profile/">{$aLang.user_settings}</a></li> 
 				<li class="item-messages">
 					<a href="{router page='talk'}" id="new_messages">
 						<i class="item-icon"></i>
@@ -38,9 +50,7 @@
 						{if $iUserCurrentCountTalkNew}<div class="new">{$iUserCurrentCountTalkNew}</div>{/if}
 					</a>
 				</li>
-				<li class="item-favourite"><i class="item-icon"></i><a href="{$oUserCurrent->getUserWebPath()}favourites/topics/">{$aLang.user_menu_profile_favourites}</a></li> 
-				<li class="item-profile"><i class="item-icon"></i><a href="{$oUserCurrent->getUserWebPath()}">{$aLang.footer_menu_user_profile}</a></li>
-				<li class="item-settings"><i class="item-icon"></i><a href="{router page='settings'}profile/">{$aLang.user_settings}</a></li>
+                                <li class="item-favourite"><i class="item-icon"></i><a href="{$oUserCurrent->getUserWebPath()}favourites/topics/">{$aLang.user_menu_profile_favourites}</a></li>				
 				<li class="item-create"><i class="item-icon"></i><a href="{router page='topic'}add/">{$aLang.block_create}</a></li>
 				{hook run='userbar_item_last'}
 				<li class="item-signout"><i class="item-icon"></i><a href="{router page='login'}exit/?security_ls_key={$LIVESTREET_SECURITY_KEY}">{$aLang.exit}</a></li>
@@ -55,7 +65,7 @@
 	{/if}
         
 	
-	{if $iUserCurrentCountTalkNew}<a href="{router page='talk'}" class="new-messages">+{$iUserCurrentCountTalkNew} <i class="icon-synio-new-message"></i></a>{/if}
+	{if $iUserCurrentCountTalkNew}<a href="{router page='talk'}" class="new-messages">{$iUserCurrentCountTalkNew} </a>{/if}
 	
 	
 	{hook run='header_banner_end'}
