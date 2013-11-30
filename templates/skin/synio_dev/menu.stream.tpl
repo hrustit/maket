@@ -1,4 +1,4 @@
-<ul class="nav nav-menu">
+<ul class="nav_menu_stream">
 	{if $oUserCurrent}
 		<li {if $sMenuItemSelect=='user'}class="active"{/if}><a href="{router page='stream'}user/">{$aLang.stream_menu_user}</a></li>
 	{/if}
