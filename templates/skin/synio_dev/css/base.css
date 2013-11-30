@@ -202,12 +202,12 @@ h2.header-table span { color: #949aa1; }
 .menu_service_rating{float: left; width: 16%; text-align: center;}
 .menu_service_special{float: left; width: 17%; text-align: center;}
 
-.menu_service_posts .posts{height: 55px; display: inline-block; text-decoration: none; }
-.menu_service_companions .companions{height: 55px; display: inline-block;  text-decoration: none; }
-.menu_service_maps .maps{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; }
-.menu_service_reservation .reservation{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; }
-.menu_service_rating .rating{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; }
-.menu_service_special .special{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; }
+.menu_service_posts .posts{height: 55px; display: inline-block; text-decoration: none; color: #4c749f;}
+.menu_service_companions .companions{height: 55px; display: inline-block;  text-decoration: none; color: #4c749f;}
+.menu_service_maps .maps{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; color: #4c749f;}
+.menu_service_reservation .reservation{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; color: #4c749f;}
+.menu_service_rating .rating{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; color: #4c749f;}
+.menu_service_special .special{height: 55px; margin: 0 auto; display: inline-block;  text-decoration: none; color: #4c749f;}
 
 .menu_service_posts .posts:hover{color: #fff; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 .menu_service_companions .companions:hover{color: #fff; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}

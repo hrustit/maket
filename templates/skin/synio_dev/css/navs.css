@@ -75,7 +75,20 @@
 .oldie .nav.nav-menu li { border-right: 1px solid #dfe3e8; }
 .oldie #nav { background: #f6f6f6; }
 
+/*     Меню "все, коллективные , персональные, лента"      */
+.nav_menu_blog{margin-left: 30px;}
+.nav_menu_blog li{float: left; padding: 0 15px 0 15px; font-size: 18px; }
+.nav_menu_blog li a{color: #4c749f; text-transform: uppercase;}
+.nav_menu_blog li.active a{color: #34aa3f; text-transform: uppercase; text-decoration: none;}
 
+/*     Меню "интересные, новые, обсуждаемые, топ"  */
+.menu_blog_content{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 280px;}
+.menu_blog_content .inactive{float: left;}
+.menu_blog_content .active{float: left;}
+.menu_blog_content .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
+.menu_blog_content .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
+.menu_blog_content .active a.new{color: #34aa3f;}
+.menu_blog_content .inactive a.new{color: #34aa3f;}
 /* Userbar */
 #userbar {
 	border: 1px solid #ddd;
@@ -157,7 +170,7 @@
 .dropdown-menu-create li a:hover 	{ color: #f00; border-color: #f00; }
 .dropdown-menu-create li.active a	{ color: #aaa; border-color: #aaa; }
 
-.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 0; right: 0; margin: 0; display: none; }
+.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 0; right: 0; margin: 10px 0 0 0 ; display: none; }
 .nav.nav-pills.nav-pills-dropdown li { margin: 0; }
 
 
