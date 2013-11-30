@@ -69,4 +69,67 @@
 	
 	
 	{hook run='header_banner_end'}
+        
 </header>
+        <div class="blok_logo">
+            <div class="logo_div">
+                <a href="{cfg name='path.root.web'}"><img src="{cfg name='path.static.skin'}/images/logo_dev.png" alt="{$sHtmlTitle}" class="logo_img"/></a>
+            </div>
+            <div class="search_big">
+                <div class="search_header">
+                    <form class="search_form" id="search_form" action="{router page='search'}topics/" >
+                        <input type="text" placeholder="{$aLang.search}" maxlength="255" name="q" class="input_text">
+                        <input type="submit" value="" title="{$aLang.search_submit}" class="input_submit">
+                    </form>
+                </div>
+            </div>
+            <div style="clear: left"></div>
+        </div>
+        <div class="green_line">
+        </div>
+                    
+<div class="blok_menu_service">
+        
+            <div class="menu_service_posts">
+                <a href="{cfg name='path.root.web'}" {if $sMenuItemSelect=='index'}class="posts_active"{else}class="posts"{/if} >
+                    <p class="posts_text">посты</p>
+                </a>
+            </div>
+        
+            <div class="menu_service_companions">
+                <a href="#">
+                <div class="companions">
+                    <p class="companions_text">поиск попутчика</p>
+                </div>
+                </a>
+            </div>
+            <div class="menu_service_maps">
+                <a href="#">
+                <div class="maps">
+                    <p class="maps_text">ваша карта</p>
+                </div>
+                </a>
+            </div>
+            <div class="menu_service_reservation">
+                <a href="#">
+                <div class="reservation">
+                    <p class="reservation_text">бронирование</p>
+                </div>
+                </a>
+            </div>
+            <div class="menu_service_rating">
+                <a href="#">
+                <div class="rating">
+                    <p class="rating_text">рейтинг</p>
+                </div>
+                </a>
+            </div>
+            <div class="menu_service_special">
+                <a href="#">
+                <div class="special">
+                    <p class="special_text">спец предложения</p>
+                </div>
+                </a>
+            </div>
+            <div style="clear: left"></div>
+        </div>
