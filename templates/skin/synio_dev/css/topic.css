@@ -7,20 +7,21 @@
 
 /* Header */
 .topic .topic-header 							{ margin-bottom: 20px; }
-.topic .topic-header .topic-title 				{ font-size: 27px; line-height: 1.1em; font-weight: normal; margin: 0 0 10px; }
-.topic .topic-header .topic-title a 			{ text-decoration: underline; color: #275ec2; }
-.topic .topic-header .topic-title a:hover 		{ color: #f00; }
+.topic .topic-header .topic-title 				{ font-size: 27px; line-height: 1.1em; font-weight: normal; margin: 12px 0 0px; }
+.topic .topic-header .topic-title a 			{ text-decoration: underline; color: #4c4c4c; line-height: 28px; font-size: 24px; font-family: verdana;}
+.topic .topic-header .topic-title a:hover 		{ color: #34aa3f;; }
 .topic .topic-header .topic-title i 			{ position: relative; top: 9px; cursor: help; margin-right: 5px; }
 .topic .topic-header .topic-info 				{ margin-bottom: 25px; color: #777; }
 .topic .topic-header .topic-info time 			{ margin-right: 15px; }
-.topic .topic-header .topic-info .topic-blog 	{ font-family: 'PT Sans', sans-serif; font-size: 18px; color: #000; text-decoration: underline; }
-.topic .topic-header .topic-info .topic-blog:hover 	{ color: #666; }
-.topic .topic-header .topic-info .blog-list-info 	{ position: relative; top: 5px; }
+.topic .topic-header .topic-info .topic-blog 	{ font-family: verdana, sans-serif; font-size: 11px; color: #8aa555; text-decoration: underline; position: relative; top: -4px; }
+.topic .topic-header .topic-info .topic-blog:hover 	{ color: #4c749f; }
+.topic .topic-header .topic-info .blog-list-info 	{ position: relative; top: 2px; }
 .topic .topic-header .topic-actions 			{ background: #fcfce9; border-radius: 5px; padding: 10px 15px; font-size: 11px; overflow: hidden; }
 .topic .topic-header .topic-actions li 			{ float: left; margin-right: 18px; }
 .topic .topic-header .topic-actions li.draft a	{ color: #27964c; }
 .topic .topic-header .topic-actions li.delete a	{ color: #da4242; }
 .topic .topic-header .topic-actions li i		{ margin-right: 3px; }
+.topic .topic-header .topic-info .topic_info_img        {}
 
 /* Content */
 .topic .topic-content 		{ margin-bottom: 15px; }
@@ -45,7 +46,7 @@
 .topic .topic-footer .topic-info li.topic-info-vote { float: right; padding: 0; margin-right: 0; overflow: hidden; }
 
 .topic .topic-footer .topic-info li.topic-info-author 			{ padding: 4px 0; }
-.topic .topic-footer .topic-info li.topic-info-author a 		{ text-decoration: underline; }
+.topic .topic-footer .topic-info li.topic-info-author a 		{ text-decoration: none; color: #464646;}
 .topic .topic-footer .topic-info li.topic-info-author a:hover 	{ }
 .topic .topic-footer .topic-info li.topic-info-author a img		{ width: 16px; height: 16px; vertical-align: middle; margin-right: 2px; }
 
@@ -69,7 +70,8 @@
 .topic .topic-footer .topic-info li.topic-info-favourite i 			{ float: left; margin-right: 3px; }
 .topic .topic-footer .topic-info li.topic-info-favourite:hover		{ background: #64ceff; color: #fff; }
 .topic .topic-footer .topic-info li.topic-info-favourite:hover i	{ background-position: 0 -51px; }
-
+.topic_read_more{color: #464646; text-decoration: none; background: #ececec; border: 1px solid #ddd; border-radius: 5px; padding: 3px 18px 3px 5px; margin: 0px 0 4px 100px; }
+.topic_read_more:hover{color: #34aa3f; }
 /* Share */
 .topic .topic-share 				{ display: none; border: 3px solid #edf8fd; padding: 3px 35px 3px 3px; border-radius: 10px; margin-bottom: 10px; position: relative; }
 .topic .topic-share .close			{ content: ''; position: absolute; top: 7px; right: 7px; width: 19px; height: 22px; background: url(../images/icons-synio.png) -479px -26px no-repeat; cursor: pointer; opacity: .8; }

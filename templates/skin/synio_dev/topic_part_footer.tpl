@@ -5,33 +5,6 @@
 
 
 	<footer class="topic-footer">
-		<ul class="topic-tags js-favourite-insert-after-form js-favourite-tags-topic-{$oTopic->getId()}">
-			<li><i class="icon-synio-tags"></i></li>
-			
-			{strip}
-				{if $oTopic->getTagsArray()}
-					{foreach from=$oTopic->getTagsArray() item=sTag name=tags_list}
-						<li>{if !$smarty.foreach.tags_list.first}, {/if}<a rel="tag" href="{router page='tag'}{$sTag|escape:'url'}/">{$sTag|escape:'html'}</a></li>
-					{/foreach}
-				{else}
-					<li>{$aLang.topic_tags_empty}</li>
-				{/if}
-				
-				{if $oUserCurrent}
-					{if $oFavourite}
-						{foreach from=$oFavourite->getTagsArray() item=sTag name=tags_list_user}
-							<li class="topic-tags-user js-favourite-tag-user">, <a rel="tag" href="{$oUserCurrent->getUserWebPath()}favourites/topics/tag/{$sTag|escape:'url'}/">{$sTag|escape:'html'}</a></li>
-						{/foreach}
-					{/if}
-					
-					<li class="topic-tags-edit js-favourite-tag-edit" {if !$oFavourite}style="display:none;"{/if}>
-						<a href="#" onclick="return ls.favourite.showEditTags({$oTopic->getId()},'topic',this);" class="link-dotted">{$aLang.favourite_form_tags_button_show}</a>
-					</li>
-				{/if}
-			{/strip}
-		</ul>
-		
-		
 		<div class="topic-share" id="topic_share_{$oTopic->getId()}">
 			{hookb run="topic_share" topic=$oTopic bTopicList=$bTopicList}
 				<div class="yashare-auto-init" data-yashareTitle="{$oTopic->getTitle()|escape:'html'}" data-yashareLink="{$oTopic->getUrl()}" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,gplus"></div>
@@ -79,7 +52,21 @@
 					{/if}
 				</li>
 			{/if}
+<!-- Читать далее -->
 
+	{if $bTopicList}
+            {if $oTopic->getTextShort()!=$oTopic->getText()}
+                <li>
+                    <a href="{$oTopic->getUrl()}#cut" title="{$aLang.topic_read_more}" class="topic_read_more">
+				{if $oTopic->getCutText()}
+					{$oTopic->getCutText()}
+				{else}
+					{$aLang.topic_read_more} &rarr;
+				{/if}
+                    </a>
+                </li>
+            {/if}
+	{/if}
 
 			{if $oVote || ($oUserCurrent && $oTopic->getUserId() == $oUserCurrent->getId()) || strtotime($oTopic->getDateAdd()) < $smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}
 				{assign var="bVoteInfoShow" value=true}
@@ -134,6 +121,7 @@
 							{/if}
 						</span>
 					</div>
+       
 					<div class="vote-item vote-up" onclick="return ls.vote.vote({$oTopic->getId()},this,1,'topic');"><span><i></i></span></div>
 					{if $bVoteInfoShow}
 						<div id="vote-info-topic-{$oTopic->getId()}" style="display: none;">
