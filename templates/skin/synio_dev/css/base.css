@@ -195,12 +195,12 @@ h2.header-table span { color: #949aa1; }
     height: 60px;
     background: #fff;
 }
-.menu_service_posts{float: left; width: 16%; text-align: center;}
-.menu_service_companions{float: left; width: 16%; text-align: center;}
+.menu_service_posts{float: left; width: 14%; text-align: center;}
+.menu_service_companions{float: left; width: 18%; text-align: center;}
 .menu_service_maps{float: left; width: 16%; text-align: center;}
 .menu_service_reservation{float: left; width: 16%; text-align: center;}
-.menu_service_rating{float: left; width: 16%; text-align: center;}
-.menu_service_special{float: left; width: 17%; text-align: center;}
+.menu_service_rating{float: left; width: 14%; text-align: center;}
+.menu_service_special{float: left; width: 19%; text-align: center;}
 
 .menu_service_posts .posts{height: 55px; display: inline-block; text-decoration: none; color: #4c749f;}
 .menu_service_companions .companions{height: 55px; display: inline-block;  text-decoration: none; color: #4c749f;}
@@ -216,12 +216,12 @@ h2.header-table span { color: #949aa1; }
 .menu_service_rating .rating:hover{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 .menu_service_special .special:hover{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 
-.menu_service_posts .posts_active{color: #fff; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
-.menu_service_companions .companions_active{color: #fff; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
-.menu_service_maps .maps_active{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
-.menu_service_reservation .reservation_active{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
-.menu_service_rating .rating_active{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
-.menu_service_special .special_active{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_posts .posts_active{color: #fff; text-decoration: none; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_companions .companions_active{color: #fff; text-decoration: none;  height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_maps .maps_active{color: #fff; height: 55px; text-decoration: none;  margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_reservation .reservation_active{color: #fff; text-decoration: none;  height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_rating .rating_active{color: #fff; height: 55px; text-decoration: none;  margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_special .special_active{color: #fff; height: 55px; text-decoration: none;  margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 
 .posts_text{ height: 56px;
 margin: 0 17px;
