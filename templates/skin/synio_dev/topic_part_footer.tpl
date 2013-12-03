@@ -20,6 +20,7 @@
 				<a rel="author" href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a>
 			</li>
 			<li class="topic-info-date">
+                            
 				<time datetime="{date_format date=$oTopic->getDateAdd() format='c'}" title="{date_format date=$oTopic->getDateAdd() format='j F Y, H:i'}">
 					{date_format date=$oTopic->getDateAdd() hours_back="12" minutes_back="60" now="60" day="day H:i" format="j F Y, H:i"}
 				</time>
@@ -56,7 +57,7 @@
 
 	{if $bTopicList}
             {if $oTopic->getTextShort()!=$oTopic->getText()}
-                <li>
+                <li class="topic-info-vote">
                     <a href="{$oTopic->getUrl()}#cut" title="{$aLang.topic_read_more}" class="topic_read_more">
 				{if $oTopic->getCutText()}
 					{$oTopic->getCutText()}
@@ -67,7 +68,8 @@
                 </li>
             {/if}
 	{/if}
-
+<!--   ****    -->
+                    {if !$bTopicList}<!--   Если мы на странице со списком топиков    -->
 			{if $oVote || ($oUserCurrent && $oTopic->getUserId() == $oUserCurrent->getId()) || strtotime($oTopic->getDateAdd()) < $smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}
 				{assign var="bVoteInfoShow" value=true}
 			{/if}
@@ -135,7 +137,7 @@
 					{/if}
 				</div>
 			</li>
-			
+                    {/if}
 			{hook run='topic_show_info' topic=$oTopic}
 		</ul>
 
