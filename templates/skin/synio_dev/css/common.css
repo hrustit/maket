@@ -160,8 +160,10 @@
 
 /* Пагинация 
 ---------------------------------------------------- */
-.pagination 					{ overflow: hidden; zoom: 1; }
-.pagination ul 					{ overflow: hidden; zoom: 1; line-height: 1em; float: left; margin-top: 5px; }
+.pagination 					{ overflow: hidden; zoom: 1; width: 100%; text-align: center;}
+.pagination ul 					{ overflow: hidden; zoom: 1; line-height: 1em;  margin-top: 5px; }
+.pagination .pagination_ul_1{}
+.pagination .pagination_ul_2{}
 .pagination ul li 				{ float: left; margin-right: 5px; }
 .pagination ul li span			{ color: #aaa; }
 .pagination ul li span,
