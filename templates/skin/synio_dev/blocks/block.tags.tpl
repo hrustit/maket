@@ -1,4 +1,4 @@
-<section class="block block-type-tags">
+{*<section class="block block-type-tags">
 	<header class="block-header sep">
 		<h3>{$aLang.block_tags}</h3>
 		
@@ -47,4 +47,4 @@
 			</div>
 		{/if}
 	</div>
-</section>
+</section>*}

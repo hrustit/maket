@@ -191,7 +191,7 @@
 .icon-synio-comments-green			{ width: 11px; height: 11px; background-position: -46px -23px; }
 .icon-synio-comments-green-filled	{ width: 11px; height: 11px; background-position: -46px -51px; }
 .icon-synio-comments-blue			{ width: 11px; height: 11px; background-position: -46px -37px; }
-.icon-synio-comments-small			{ width: 11px; height: 11px; background-position: -28px -51px; }
+.icon-synio-comments-small			{ width: 11px; height: 11px; background: url(../images/live-com.png) no-repeat; }
 
 .icon-synio-tags					{ width: 15px; height: 11px; background-position: -26px -37px; }
 

@@ -1,4 +1,4 @@
-{if $oTopic}
+{*{if $oTopic}
 	{assign var="oBlog" value=$oTopic->getBlog()}
 	{if $oBlog->getType()!='personal'}
 	<section class="block block-type-blog">
@@ -19,4 +19,4 @@
 		</footer>
 	</section>
 	{/if}
-{/if}
+{/if}*}

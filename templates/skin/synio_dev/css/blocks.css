@@ -2,23 +2,23 @@
 	БЛОКИ
 ------------------------------------------------------------------- */
 
-.block 					{ padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px dotted #dce1e6; }
-.block:last-child 		{ margin-bottom: 0; border: none; }
+.block                  { padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px dotted #dce1e6; }
+.block:last-child 	{ margin-bottom: 0; border: none; }
 .sidebar-left .block 	{ margin-bottom: 10px; }
 
-.block .block-header 					{ position: relative; margin-bottom: 4px; padding-bottom: 16px; }
-.block .block-header.sep 				{ background: url(../images/block-sep.png) 0 100% no-repeat; }
-.block .block-header h3 				{ font-size: 22px; line-height: 1em; font-weight: normal; font-family: 'PT Sans', sans-serif; }
-.block .block-header h3 a 				{ text-decoration: none; color: #333; }
+.block .block-header 	{ position: relative; padding: 10px 0 15px 0px; text-align: center; background: url(../images/bac_blok.png) no-repeat;}
+.block .block-header.sep {  }
+.block .block-header h3 { font-size: 18px;  line-height: 1em; font-weight: normal;  font-family:verdana, arial, sans-serif;}
+.block .block-header h3 a { text-decoration: none; color: #4c4c4c;  }
 .block .block-header h3 a.link-dotted 	{ color: #5055B2; }
-.block .block-content 					{  }
-.block footer 							{ margin-top: 15px; font-size: 11px; color: #b9c2c2; }
-.block footer a							{ color: #727a90; }
+.block .block-content 					{ padding: 0 10px; }
+.block footer 		{ margin: 15px 15px 5px 0; font-size: 11px; color: ##4c4c4c; text-align: right;}
+.block footer a		{ color: #727a90; }
 
-.block .max-height-200 		{ overflow: auto; max-height: 200px; _height: expression( this.scrollHeight > 200 ? "200px" : "auto" ); position: relative; }
+.block .max-height-200  { overflow: auto; max-height: 200px; _height: expression( this.scrollHeight > 200 ? "200px" : "auto" ); position: relative; }
 
-.block .nav.nav-pills				{ margin-bottom: 0; padding-top: 15px; }
-.block .nav.nav-pills a 			{ text-decoration: none; border-bottom: 1px dotted #727a90; }
+.block .nav.nav-pills	{ margin-bottom: 0; padding-top: 15px; }
+.block .nav.nav-pills a { text-decoration: none; border-bottom: 1px dotted #727a90; }
 .block .nav.nav-pills li.active a 	{ border: none; }
 
 
@@ -27,15 +27,15 @@
 .block .block-update:hover 		{ background-position: -20px -200px; }
 .block .block-update.active 	{ background-position: -40px -200px; }
 
-.block.block-type-stream .block-content .latest-list { }
+.block.block-type-stream .block-content .latest-list {padding: 0 0px; }
 .block.block-type-stream .block-content .latest-list li { margin-bottom: 15px; color: #818189; }
 .block.block-type-stream .block-content .latest-list p { font-size: 11px; }
-.block.block-type-stream .block-content .latest-list .stream-topic { text-decoration: underline; }
+.block.block-type-stream .block-content .latest-list .stream-topic {color: #4c4c4c; font-size: 12px; text-decoration: underline; }
 .block.block-type-stream .block-content .latest-list .stream-blog { color: #4128B1; }
 .block.block-type-stream .block-content .latest-list .stream-blog:hover { color: #f00; }
-.block.block-type-stream .block-content .latest-list .author { color: #4c4c4c; text-decoration: underline; }
+.block.block-type-stream .block-content .latest-list .author { color: #72ac47; font-size: 12px; text-decoration: underline; }
 .block.block-type-stream .block-content .latest-list .author:hover { color: #f00; }
-.block.block-type-stream .block-content .latest-list .block-item-comments { font-size: 11px; text-decoration: none; color: #818189; white-space: nowrap; }
+.block.block-type-stream .block-content .latest-list .block-item-comments { font-size: 11px; text-decoration: none; color: #c70202; white-space: nowrap; }
 .block.block-type-stream .block-content .latest-list .block-item-comments i { position: relative; top: 3px; margin-right: 2px; }
 
 
