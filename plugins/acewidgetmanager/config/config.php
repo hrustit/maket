@@ -4,10 +4,10 @@
  * @Plugin Id: acewidgetmanager
  * @Plugin URI: 
  * @Description: Custom Widgets (LS Blocks) Manager for LiveStreet/ACE
- * @Version: 2.0.212
+ * @Version:
  * @Author: Vadim Shemarov (aka aVadim)
  * @Author URI: 
- * @LiveStreet Version: 1.0.1
+ * @LiveStreet Version:
  * @File Name: %%filename%%
  * @License: GNU GPL v2, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *----------------------------------------------------------------------------

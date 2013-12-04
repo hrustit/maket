@@ -45,7 +45,25 @@ $ace.blockOnline = {
 
                 if ($that.options['show_compact_mode']) $that.list.addClass('compact');
                 else $that.list.removeClass('compact');
-              
+                /*
+                if ($that.options['show_last_time']) {
+                    var div_last = '<div class="block_online_last">' + item.last + '</div>';
+                }
+                if ($that.options['show_username']) {
+                    div_name =
+                        '<div class="block_online_name">'
+                            + '<a href="' + item.link + '">' + ($that.options['show_login_only'] ? item.login : item.name) + '</a>'
+                            + '</div>';
+                }
+                if ($that.options['avatar_size'] > 0) {
+                    var title = item.name + ' [' + item.last + ']';
+                    div_avatar =
+                        '<div class="block_online_avatar">'
+                            + '<a href="' + item.link + '"><img src="' + item.avatar + '" alt="' + item.name + '" title="' + title + '"/></a>'
+                            + '</div>';
+                }
+                //$that.list.append($('<li></li>').html(div_last + div_avatar + div_name));
+                */
                 var li = $('<li></li>');
                 if ($that.options['show_last_time'] && !$that.options['show_compact_mode']) {
                    li.append($('<div class="block_online_last">' + item.last + '</div>'));
@@ -53,7 +71,7 @@ $ace.blockOnline = {
                 if ($that.options['show_username']) {
                     li.append($(
                         '<div class="block_online_name">'
-                            + '<a href="' + item.link + '">' + ($that.options['show_login_only'] ? item.login : item.name) + ' title="' + item.name + '"</a>'
+                            + '<a href="' + item.link + '">' + ($that.options['show_login_only'] ? item.login : item.name) + '</a>'
                             + '</div>'));
                 }
                 if ($that.options['avatar_size'] > 0) {

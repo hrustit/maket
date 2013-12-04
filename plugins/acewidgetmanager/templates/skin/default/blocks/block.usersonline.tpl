@@ -1,18 +1,17 @@
 {literal}
 <style type="text/css">
-    li.block_online {
+    #block_online_list li {
     }
 
-    li.block_online.compact {
+    #block_online_list.compact li {
         display: block;
         float: left;
         padding-left: 1px;
         padding-right: 1px;
     }
-	.bottom{clear:left;}
+
     div.block_online_last {
         float: right;
-	display:none;
     }
 
     div.block_online_avatar {
@@ -24,10 +23,7 @@
 
     div.block_online_name a {
         text-decoration: none;
-	padding-right:7px;
     }
-	#block_online_list li{float:left;}
-	.block.blogs ul.list li{border-bottom: 0px;}
 </style>
 
 {/literal}
@@ -70,5 +66,3 @@
         <footer><a href="{router page='people'}online/">{$oLang->_block_users_online_all}</a></footer>
     </div>
 </section>
- 
-    

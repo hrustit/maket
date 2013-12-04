@@ -3,11 +3,11 @@
  * @Plugin Name: aceWidgetManager
  * @Plugin Id: acewidgetmanager
  * @Plugin URI: 
- * @Description: Custom Widgets (LS Blocks) Manager for LiveStreet/ACE
- * @Version: 2.0.212
+ * @Description: Custom Block Manager for LiveStreet/ACE
+ * @Version:
  * @Author: Vadim Shemarov (aka aVadim)
  * @Author URI: 
- * @LiveStreet Version: 1.0.1
+ * @LiveStreet Version:
  * @File Name: %%filename%%
  * @License: GNU GPL v2, http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  *----------------------------------------------------------------------------
@@ -61,27 +61,26 @@ $config['clear'] = false;
  *
  */
 
+
+/**
+ * ВНИМАНИЕ!!!
+ *
+ * Следующие два блока добавлены исключительно в демонстрационных целях!
+ */
 $config['widgets'][] = array(
-    'name' => 'usersonline', // название блока
+    'name' => 'template', // название блока
     'group' => 'right', // позиционирование блока
-    'priority' => 1000, // приоритет блока (блоки с бОльшим приоритетом выводятся выше других)
+    'priority' => 100,
     'params' => array(
         'plugin' => 'acewidgetmanager', //
-        'users_max' => 40, // Максимальное число отображаемых пользователей
-        'users_period' => 600, // Время, в течение которого пользователь считается в онлайне (сек)
-        'renew_time' => 100, // Время обновления (сек). Если = 0, то без автообновления
-        'show_last_time' => false, // Показывать время последней активности юзера
-                                  // true - показывать
-                                  // false - не показывать
-        'show_avatar' => 0, // Показывать аватар юзера. Задается размер аватары. Если = 0, то не показывается аватара
-        'show_username' => true, // Показывать имя пользователя (если имя юзером не задано, то показывается его логин)
-        'show_login_only' => false, // Показывать только логин, даже если юзер задал свое имя (имеет смысл, только если задан предыдущий параметр)
-        'show_compact_mode' => false, // Выводить пользователей в компактном режиме (не списком)
+        'title' => 'Ищут попутчика',
+        'text' => 'text1 text1 text1 ',
+        'footer' => 'footer1',
     ),
-    'js' => '___/js/usersonline.js',
-    'on'=>'/,blog' ,
     //'off'=>array('admin/*', 'settings/*', 'profile/*', 'talk/*', 'people/*'),
-    'display' => 1,  // true - выводить блок, false - не выводить блок,
-                        // array('date_from'=>'2011-10-10', 'date_upto'=>'2011-10-20') - выводить с... по...
 );
 
+
+return $config;
+
+// EOF
