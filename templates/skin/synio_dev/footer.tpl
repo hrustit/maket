@@ -5,6 +5,50 @@
 
 	
 	<footer id="footer">
+            	<div class="copyright">
+			
+			<img src="{cfg name='path.static.skin'}/images/logo_dev.png" alt="{$sHtmlTitle}" class="footer_logo_img"/>
+                        <p class="">
+                            NewsTraveller - это информационно-новостной портал для туристов и путешественников. В NewsTraveller заложена модель взаимопомощи и обмене опыта между людьми.
+                        </p>
+                        <p class="">
+                            Основная цель NewsTraveller - помогает в решении задачи людей, путём обмена опыта и имеющихся на базе проекта сервисов. Именно для этого мы создавали свой проект.
+                        </p>
+		</div>
+                        
+
+                <ul class="footer-list">
+                        <li class="footer-list-header">СТРУКТУРА</li>
+                        <li><a href="#">О проекте</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Реклама на сайте</a></li>
+                        <li><a href="#">Правообладателям</a></li>
+                        <li><a href="#">Правила</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        {hook run='footer_menu_project_item'}
+                </ul>
+               
+                <ul class="footer-list">
+                        <li class="footer-list-header">ПОСТЫ</li>
+                        <li><a href="#">Все</a></li>
+                        <li><a href="#">Колективные</a></li>
+                        <li><a href="#">Персональные</a></li>
+                        <li><a href="#">Лента</a></li>
+                        <li><a href="#">Блоги</a></li>
+                        {hook run='footer_menu_project_item'}
+                </ul> 
+                               
+                <ul class="footer-list">
+                        <li class="footer-list-header">СЕРВИСЫ</li>
+                        <li><a href="#">Поиск попутчика</a></li>
+                        <li><a href="#">Кто где был</a></li>
+                        <li><a href="#">Бронирование</a></li>
+                        <li><a href="#">Рейтинги</a></li>
+                        <li><a href="#">Спец предложения</a></li>
+                        {hook run='footer_menu_project_item'}
+                </ul> 
+                
 		{if $oUserCurrent}
 			<ul class="footer-list">
 				<li class="footer-list-header word-wrap">{$oUserCurrent->getLogin()}</li>
@@ -23,42 +67,28 @@
 			</ul>
 		{/if}
 		
-		<ul class="footer-list">
-			<li class="footer-list-header">{$aLang.footer_menu_navigate_title}</li>
-			<li><a href="{cfg name='path.root.web'}">{$aLang.topic_title}</a></li>
-			<li><a href="{router page='blogs'}">{$aLang.blogs}</a></li>
-			<li><a href="{router page='people'}">{$aLang.people}</a></li>
-			<li><a href="{router page='stream'}">{$aLang.stream_menu}</a></li>
-			{hook run='footer_menu_navigate_item'}
-		</ul>
 		
-		
-		{* RU: Тут можно добавить свой блок со ссылками, расскоментируйте блок кода ниже и добавьте свои ссылки *}
-		{* EN: You can add additional block with links here, just uncomment code below and add your links *}
-		
-		{*
-			<ul class="footer-list">
-				<li class="footer-list-header">{$aLang.footer_menu_project_title}</li>
-				<li><a href="#">{$aLang.footer_menu_project_about}</a></li>
-				<li><a href="#">{$aLang.footer_menu_project_contact}</a></li>
-				<li><a href="#">{$aLang.footer_menu_project_advert}</a></li>
-				<li><a href="#">{$aLang.footer_menu_project_help}</a></li>
-				{hook run='footer_menu_project_item'}
-			</ul>
-		*}
 	
-		<div class="copyright">
-			{hook run='copyright'}
-			
-			<div class="design-by">
-				<img src="{cfg name='path.static.skin'}/images/xeoart.png" alt="xeoart" />
-				Design by <a href="http://xeoart.com">xeoart</a>
-				<div>2012</div>
-			</div>
-		</div>
-		
 		{hook run='footer_end'}
+
 	</footer>
+                <div class="mobi">
+                    <div class="copiright_label">
+                        <p>© 2013 NewsTraveller. Все права защищены.</p>
+                        <img src="{cfg name='path.static.skin'}/images/16plus.png" alt="16+" class="plus16"/>
+                    </div>
+                    <div class="mobi_label">
+                        <p><a href="#">Мобильная версия</a></p>
+                    </div>
+                    <div class="shared_buttons">
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/yandex.png" alt="Яндекс" class=""/></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/facebook.png" alt="Яндекс" class=""/></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/twitter.png" alt="Яндекс" class=""/></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/vk.png" alt="Яндекс" class=""/></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/google-plus.png" alt="Яндекс" class=""/></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/rss.png" alt="Яндекс" class=""/></a>                        
+                    </div>
+                </div>        
 </div> <!-- /container -->
 
 {include file='toolbar.tpl'}

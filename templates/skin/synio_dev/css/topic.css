@@ -2,7 +2,7 @@
 	ТОПИК
 -------------------------------------------- */
 
-.topic { margin: 20px 0 50px 0; background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.topic { margin: 20px 0 10px 0; background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
 .topic:last-child { margin-bottom: 0; }
 
 /* Header */
@@ -46,10 +46,10 @@
 .topic .topic-footer .topic-info li.topic-info-vote { float: right; padding-top: 5px; }
 .topic .topic-footer .topic-info li.topic_share{float: right; padding-top: 0px; margin-right: 0;}
 
-.topic .topic-footer .topic-info li.topic-info-author 			{ padding: 8px 0 0 0; }
-.topic .topic-footer .topic-info li.topic-info-author a 		{ text-decoration: none; color: #464646;}
+.topic .topic-footer .topic-info li.topic-info-author 			{ padding: 5px 0 0 0; }
+.topic .topic-footer .topic-info li.topic-info-author a 		{ text-decoration: none; color: #464646; padding-top: 0px;}
 .topic .topic-footer .topic-info li.topic-info-author a:hover 	{ }
-.topic .topic-footer .topic-info li.topic-info-author a img		{ width: 13px; height: 13px; vertical-align: middle; margin-right: 2px; }
+.topic .topic-footer .topic-info li.topic-info-author a img		{ width: 13px; height: 13px;  margin-right: 2px; position: relative; top: 2px; }
 
 .topic .topic-footer .topic-info li.topic-info-date				{ color: #7b848d;  padding: 8px 0 0 0; }
 .read_more_li{margin-top: 3px; margin-left: 0px;}

@@ -273,19 +273,28 @@ background: url(../images/offers.png) 50% 10% no-repeat;
 }
 /* Футер
 ---------------------------------------------------- */
-#footer .copyright { float: right; width: 255px; }
+#footer .copyright { float: left; width: 300px; }
 #footer .copyright .design-by { overflow: hidden; line-height: 15px; margin-top: 30px; }
 #footer .copyright .design-by img { float: left; margin-right: 10px; margin-top: 3px; }
 #footer .copyright .design-by div { font-size: 10px; color: #8b9191; margin-top: 1px; }
+#footer .copyright p{margin: 0 20px 15px 0; line-height: 1.2em;}
 #footer a { color: #000; }
 #footer a:hover { color: #333; }
-#footer .footer-list { float: left; width: 138px; padding-right: 20px; }
+#footer .footer-list { float: left; width: 138px; padding: 15px 15px 5px 15px; }
 #footer .footer-list li { margin-bottom: 3px; }
-#footer .footer-list .footer-list-header { font-size: 12px; font-weight: bold; margin-bottom: 11px; }
-#footer .footer-list a { color: #4c4c4c; }
+#footer .footer-list .footer-list-header { font-size: 14px; font-weight: bold; margin-bottom: 11px; }
+#footer .footer-list a { color: #fff; font-size: 12px;}
 
+.footer_logo_img {height: 56px; width: 160px; margin: 15px 0 5px 0px;}
 
-
+/*     Под футером  */
+.mobi{width: 100%; height: 65px; background: #1a1a1a; color: #fff;}
+.mobi .copiright_label{ float: left; margin: 15px 0 0 15px; width: 35%; font-size: 11px;  font-family: arial;}
+.mobi .mobi_label a{color: #fff;}
+.mobi .plus16{margin: 10px 0 0 0px; }
+.mobi .mobi_label{float: left; padding: 15px 0 0 0px; width: 25%; text-align: center;}
+.mobi .shared_buttons{float: right; margin: 15px 20px 0 0; }
+.mobi .shared_buttons img{margin: 0 3px;}
 /* Навигация
 ---------------------------------------------------- */
 #nav .button.button-write { float: right; margin-left: 35px; margin-top: 1px; }

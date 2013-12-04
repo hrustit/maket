@@ -25,7 +25,17 @@
 #wrapper 	{ overflow: hidden; zoom: 1; padding: 20px 16px 20px 27px; background: url(../images/cream_pixels.png); border-bottom: 1px solid #eee; -webkit-box-shadow: 0 0 5px rgba(0,0,0,.05); box-shadow: 0 0 5px rgba(0,0,0,.05); }
 #content 	{ min-height: 1px; margin-right: 295px; position: relative; background: url(../images/cream_pixels.png);}
 #sidebar	{ float: right; width: 240px; }
-#footer 	{ overflow: hidden; zoom: 1; margin-bottom: 20px; padding: 0 0 50px 30px; font-size: 11px; background: #303030;}
+#footer 	{ 
+    overflow: hidden; 
+    zoom: 1; 
+    margin-bottom: 0px; 
+    padding: 0 0 0px 15px; 
+    font-size: 11px; 
+    background: #303030; 
+    font-family: tahoma;
+    font-size: 11px;
+    color: #fff;
+}
 
 
 #wrapper.no-sidebar				{ background: url(../images/cream_pixels.png); }

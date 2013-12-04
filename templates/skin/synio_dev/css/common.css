@@ -162,20 +162,15 @@
 ---------------------------------------------------- */
 .pagination 					{ overflow: hidden; zoom: 1; width: 100%; text-align: center;}
 .pagination ul 					{ overflow: hidden; zoom: 1; line-height: 1em;  margin-top: 5px; }
-.pagination .pagination_ul_1{}
-.pagination .pagination_ul_2{}
-.pagination ul li 				{ float: left; margin-right: 5px; }
-.pagination ul li span			{ color: #aaa; }
-.pagination ul li span,
-.pagination ul li a 			{ float: left; padding: 4px 6px;}
-.pagination ul li a:hover 		{  }
-.pagination ul li.active span 	{ color: #333; border: 1px solid #eee; border-radius: 4px; }
-.pagination ul li i 			{ opacity: .5; filter: alpha(opacity=50); }
-.pagination ul li.prev span,
-.pagination ul li.prev a		{ padding-left: 0; }
-.pagination ul li.next			{ margin-right: 50px; }
 
-
+.pagination .pagination_ul_1 span{color: #000; font-size: 18px; line-height: 28px; font-family: tahoma; margin: 0 10px; text-decoration: none;}
+.paging_prev_page{color: #4c749f; font-size: 18px; line-height: 28px; font-family: tahoma; margin-right: 10px; text-decoration: none;}
+.paging_next_page{color: #4c749f; font-size: 18px; line-height: 28px; font-family: tahoma; margin-left: 10px; text-decoration: none;}
+.paging_prev_page:hover{color: #34aa3f; }
+.paging_next_page:hover{color: #34aa3f; }
+.pagination .pagination_ul_2{margin-top: 10px;}
+.pagination .pagination_ul_2 .page{color: #4c4c4c; text-decoration: none; font-weight: bold; font-size: 15px; font-family: tahoma; margin: 0 5px;}
+.pagination .pagination_ul_2 .active{color: #fff; text-decoration: none; font-weight: bold; padding: 3px;  background-color: #4c749f; font-size: 15px;font-family: tahoma;}
 
 /* Actions 
 ---------------------------------------------------- */
