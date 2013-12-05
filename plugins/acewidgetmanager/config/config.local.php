@@ -63,9 +63,7 @@ $config['clear'] = false;
 
 
 /**
- * ВНИМАНИЕ!!!
- *
- * Следующие два блока добавлены исключительно в демонстрационных целях!
+ * Блок "Ищут попутчика"
  */
 $config['widgets'][] = array(
     'name' => 'template', // название блока
@@ -77,8 +75,11 @@ $config['widgets'][] = array(
         'text' => 'text1 text1 text1 ',
         'footer' => 'footer1',
     ),
+    'on'=>'/,blog' ,
     //'off'=>array('admin/*', 'settings/*', 'profile/*', 'talk/*', 'people/*'),
 );
+
+
 
 
 return $config;

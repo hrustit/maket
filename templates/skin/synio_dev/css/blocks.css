@@ -2,7 +2,7 @@
 	БЛОКИ
 ------------------------------------------------------------------- */
 
-.block                  { padding-bottom: 25px; margin-bottom: 25px; border-bottom: 1px dotted #dce1e6; }
+.block                  { padding-bottom: 0px; margin-bottom: 5px; border-bottom: 1px dotted #dce1e6; }
 .block:last-child 	{ margin-bottom: 0; border: none; }
 .sidebar-left .block 	{ margin-bottom: 10px; }
 
@@ -28,7 +28,7 @@
 .block .block-update.active 	{ background-position: -40px -200px; }
 
 .block.block-type-stream .block-content .latest-list {padding: 0 0px; }
-.block.block-type-stream .block-content .latest-list li { margin-bottom: 15px; color: #818189; }
+.block.block-type-stream .block-content .latest-list li { margin-bottom: 8px; color: #818189; }
 .block.block-type-stream .block-content .latest-list p { font-size: 11px; }
 .block.block-type-stream .block-content .latest-list .stream-topic {color: #4c4c4c; font-size: 12px; text-decoration: underline; }
 .block.block-type-stream .block-content .latest-list .stream-blog { color: #4128B1; }
