@@ -1,7 +1,7 @@
 {literal}
 <style type="text/css">
 .avatar_companion{float: left; margin-right: 5px;}
-.label_companion{float: left;}
+.label_companion{float: left;  width: 220px;}
 .label_companion p{ font-size: 12px; color: #4c4c4c; font-family: verdana;}
 .label_companion p a{text-decoration: none; color: #4c759f;}
 .flag{margin: 0 3px;}
@@ -22,9 +22,9 @@
 
 .left_foter{float: left; margin-left: 10px;}
 .center_foter{float: left; margin: 5px 5px;}
-.center_foter p{color: #fff; font-size: 10px; line-height: 1.3;}
+.center_foter p{color: #fff; font-size: 9px; line-height: 1.3;}
 .right_foter{float: left; }
-.right_foter img{margin: 50px 0 0 10px; }
+.right_foter img{margin: 50px 0 0 5px; }
 
 
 .reserv{width: 100%; height: 102px;}
@@ -52,7 +52,7 @@
             </div>
             <div class="label_companion">
                 <p><a href="#">Иван Иванов </a> ищет попутчика в:</p>
-                <p><img src="{cfg name='path.static.skin'}/images/tay.png" class="flag">Тайланд  <img src="{cfg name='path.static.skin'}/images/viet.png"  class="flag">Вьетнам  <img src="{cfg name='path.static.skin'}/images/lao.png"  class="flag">Лаос ...</p>
+                <p><img src="{cfg name='path.static.skin'}/images/tay.png" class="flag">Тайланд  <img src="{cfg name='path.static.skin'}/images/viet.png"  class="flag">Вьетнам  <img src="{cfg name='path.static.skin'}/images/lao.png"  class="flag">Лаос</p>
                 <p>путешествие, автостоп</p>
             </div>
         </div>

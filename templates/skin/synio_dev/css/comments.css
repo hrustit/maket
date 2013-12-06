@@ -8,7 +8,7 @@
 .comments-header .subscribe { position: absolute; top: 15px; right: 0; font-size: 11px; color: #7b848d; }
 .comments-header .subscribe input { top: 2px; }
 
-.comments { margin-bottom: 30px; }
+.comments { margin-bottom: 30px; background: #fff; padding: 0 5px 5px 5px;}
 
 .comment-wrapper { position: relative; }
 .comment-wrapper .comment-wrapper { padding-left: 40px; }
@@ -17,9 +17,9 @@
 
 
 /* Комментарий */
-.comment { min-height: 48px; margin-bottom: 10px; padding: 10px 0 0 40px; position: relative; }
+.comment { min-height: 48px; margin-bottom: 10px; padding: 10px 0 0 60px;  position: relative; }
 .comment .deleted { padding: 5px 10px; color: #777; background: #f4f4f4; }
-.comment .comment-avatar { position: absolute; top: 10px; left: 0; width: 30px; height: 30px; }
+.comment .comment-avatar { position: absolute; top: 10px; left: 0; width: 50px; height: 50px; border: 2px solid #fff; box-shadow: 0 0 2px rgba(0,0,0,0.5);}
 .comment .folding { width: 13px; height: 13px; position: absolute; top: 18px; left: -20px; background: url(../images/icons-synio.png) 0 -94px no-repeat; cursor: pointer; }
 .comment .folding.folded { background-position: -13px -94px; }
 
@@ -53,7 +53,7 @@
 .comment.comment-self		.comment-content		{ background: #fefef1; border-color: #e6e6bd; }
 .comment.comment-self		.comment-content:after 	{ border-color: #e6e6bd transparent transparent; }
 .comment.comment-self 		.comment-content:before { border-color: #fefef1 transparent transparent; }
-.comment.comment-new 		.comment-content		{ background: #fff; border-color: #dddb5c; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
+.comment.comment-new 		.comment-content		{  }
 .comment.comment-new		.comment-content:after 	{ border-color: #dddb5c transparent transparent; }
 .comment.comment-new 		.comment-content:before { border-color: #fff transparent transparent; }
 .comment.comment-current 	.comment-content		{ background: #cdf5a6; border-color: #bae48e; }
@@ -66,7 +66,7 @@
 
 
 /* Info Block */
-.comment .comment-info { padding: 0 70px 7px 0; line-height: 12px; position: relative; top: -2px; overflow: hidden; zoom: 1; font-size: 11px; }
+.comment .comment-info { padding: 0 70px 2px 5px; line-height: 12px; position: relative; top: -2px; overflow: hidden; zoom: 1; font-size: 11px; }
 .comment .comment-info li { float: left; height: 18px; padding-top: 3px; margin-right: 13px; }
 .comment .comment-info li a {  }
 .comment .comment-info li a.link-dotted 		{ color: #727a90; text-decoration: none; border-bottom: 1px dotted #727a90; }
@@ -74,15 +74,7 @@
 .comment .comment-info li.comment-author a { font-weight: bold; color: #727fa0; }
 .comment .comment-info li.comment-author.comment-topic-author a { color: #4b5468; }
 .comment .comment-info li.comment-author.comment-topic-author { 
-	background: rgb(254,255,163);
-	background: -moz-linear-gradient(left,  rgba(254,255,163,1) 0%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(254,255,163,1)), color-stop(100%,rgba(255,255,255,1)));
-	background: -webkit-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: -ms-linear-gradient(left,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	background: linear-gradient(to right,  rgba(254,255,163,1) 0%,rgba(255,255,255,1) 100%);
-	
-	padding-left: 7px;
+
 }
 .comment .comment-info li.comment-date { color: #818189; }
 .comment .comment-info li.comment-favourite { position: relative; top: 1px; }
@@ -95,7 +87,7 @@
 .comment .comment-info li.vote .vote-count 		{ float: left; color: #949aa1; font-weight: bold; padding-top: 3px; margin-right: 6px; }
 .comment .comment-info li.vote .vote-down 		{ float: left; width: 20px; height: 20px; background: url(../images/icons-synio.png) 0 -130px no-repeat; cursor: pointer; margin-left: 4px; }
 .comment .comment-info li.vote .vote-down:hover { background-position: 0 -150px; }
-.comment .comment-info li.vote .vote-up 		{ float: left; width: 20px; height: 20px; background: url(../images/icons-synio.png) -20px -130px no-repeat; cursor: pointer; margin-left: 4px; }
+.comment .comment-info li.vote .vote-up 		{ float: left; width: 22px; height: 22px; background: url(../images/icons-synio.png) -20px -130px no-repeat; cursor: pointer; margin-left: 4px; }
 .comment .comment-info li.vote .vote-up:hover 	{ background-position: -20px -150px; }
 
 .comment .comment-info li.vote.vote-count-positive .vote-count { color: #51983c; }
@@ -114,11 +106,11 @@
 
 
 /* Content */
-.comment .comment-content { margin-bottom: 10px; border: 1px solid #e7ebed; padding: 9px 10px 10px; border-radius: 3px; position: relative; }
+.comment .comment-content { margin-bottom: 10px; padding: 0px 5px 0px; position: relative; }
 .comment .comment-content.text { font-size: 13px; }
 .comment .comment-content.text blockquote { background: #fff; border-color: #ccc; padding: 5px 10px; margin-bottom: 5px; }
-.comment .comment-content:after { display: block; content: ""; position: absolute; bottom: -12px; left: 10px; width: 0; height: 0; border-width: 6px; border-color: #e7ebed transparent transparent; border-style: solid; }
-.comment .comment-content:before { display: block; content: ""; position: absolute; bottom: -11px; left: 10px; width: 0; height: 0; border-width: 6px; border-color: #fff transparent transparent; border-style: solid; z-index: 10; }
+/*.comment .comment-content:after { display: block; content: ""; position: absolute; bottom: -12px; left: 10px; width: 0; height: 0; border-width: 6px; border-color: #e7ebed transparent transparent; border-style: solid; }*/
+/*.comment .comment-content:before { display: block; content: ""; position: absolute; bottom: -11px; left: 10px; width: 0; height: 0; border-width: 6px; border-color: #fff transparent transparent; border-style: solid; z-index: 10; }*/
 
 
 /* Actions */
@@ -136,3 +128,10 @@
 
 .wall-submit.wall-submit-reply.wall-submit-comment { -webkit-box-shadow: none; box-shadow: none; margin-top: 0; margin-bottom: 50px; }
 .wall-submit.wall-submit-reply.wall-submit-comment:after { display: none; }
+
+/*   Кнопки Удалить и редактировать под комментарием   */
+.admin_menu{margin-bottom: 10px;}
+.admin_menu li{float: left; margin: 0 5px; padding: 0 3px; background: #f9f8f8; border: 1px solid #fff; box-shadow: 0 0 2px rgba(0,0,0,0.5); font-size: 10px; line-height: 14px;}
+.admin_menu li a{text-decoration: none; color: #000; border: none;}
+
+.line_bottom{width: 100%; border-bottom: 1px solid #eeecec; height: 2px; margin-right: 5px;}

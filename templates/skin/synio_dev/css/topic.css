@@ -2,7 +2,7 @@
 	ТОПИК
 -------------------------------------------- */
 
-.topic { margin: 20px 0 10px 0; background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
+.topic { margin: 20px 0 10px 0; padding: 0 5px; background-color: #fff; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
 .topic:last-child { margin-bottom: 0; }
 
 /* Header */

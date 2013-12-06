@@ -21,11 +21,7 @@
 		
 		<a href="{$oUser->getUserWebPath()}"><img src="{$oUser->getProfileAvatarPath(48)}" alt="avatar" class="comment-avatar" /></a>
 		
-		<div id="comment_content_id_{$oComment->getId()}" class="comment-content">
-			<div class=" text">
-				{$oComment->getText()}
-			</div>
-		</div>
+		
 		
 		
 		<ul class="comment-info">
@@ -84,7 +80,17 @@
 			{/if}
 			<li class="goto goto-comment-child"><a href="#" title="{$aLang.comment_goto_child}">↓</a></li>
 			
-			{if $oUserCurrent}
+		</ul>
+                
+                
+                <div id="comment_content_id_{$oComment->getId()}" class="comment-content">
+			<div class=" text">
+				{$oComment->getText()}
+			</div>
+		</div>
+                        
+                        {if $oUserCurrent}
+                            <ul class="admin_menu">
 				{if !$oComment->getDelete() and !$bAllowNewComment}
 					<li><a href="#" onclick="ls.comments.toggleCommentForm({$oComment->getId()}); return false;" class="reply-link link-dotted">{$aLang.comment_answer}</a></li>
 				{/if}
@@ -96,10 +102,12 @@
 				{if $oComment->getDelete() and $oUserCurrent and $oUserCurrent->isAdministrator()}   										
 					<li><a href="#" class="comment-repair link-dotted" onclick="ls.comments.toggle(this,{$oComment->getId()}); return false;">{$aLang.comment_repair}</a></li>
 				{/if}
+                                <div style="clear: left"></div>
+                             </ul>   
 				
 				{hook run='comment_action' comment=$oComment}
 			{/if}
-		</ul>
+                  <div class="line_bottom"></div>      
 	{else}				
 		{$aLang.comment_was_delete}
 	{/if}	
