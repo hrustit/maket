@@ -91,7 +91,7 @@
 <div class="blok_menu_service">
         
             <div class="menu_service_posts">
-                <a href="{cfg name='path.root.web'}" {if $sMenuItemSelect=='index'}class="posts_active"{else}class="posts"{/if} >
+                <a href="{cfg name='path.root.web'}" {if $sMenuHeadItemSelect=='blog'}class="posts_active"{else}class="posts"{/if} >
                     <p class="posts_text">посты</p>
                 </a>
             </div>

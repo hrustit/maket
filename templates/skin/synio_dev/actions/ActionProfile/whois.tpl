@@ -6,7 +6,7 @@
 {assign var="oVote" value=$oUserProfile->getVote()}
 {assign var="oGeoTarget" value=$oUserProfile->getGeoTarget()}
 
-
+<div class="profile_conainer">
 			
 {include file='actions/ActionProfile/profile_top.tpl'}
 {include file='menu.profile_whois.tpl'}
@@ -230,7 +230,7 @@
 		{hook run='profile_whois_item' oUserProfile=$oUserProfile}
 	</div>
 </div>
-
+</div>
 
 
 
