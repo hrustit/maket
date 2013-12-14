@@ -99,6 +99,24 @@
 .menu_blog_content_favorite .active a.new{color: #34aa3f;}
 .menu_blog_content_favorite .inactive a.new{color: #34aa3f;}
 
+/*     Меню "Сообщения, Только новые, Новое письмо, Избранное, Блокировать"          */
+.menu_blog_content_talk{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 370px;}
+.menu_blog_content_talk .inactive{float: left;}
+.menu_blog_content_talk .active{float: left;}
+.menu_blog_content_talk .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
+.menu_blog_content_talk .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
+.menu_blog_content_talk .active a.new{color: #34aa3f;}
+.menu_blog_content_talk .inactive a.new{color: #34aa3f;}
+
+/*     Меню "Профиль, Аккаунт, Настройки сайта, OpenID"          */
+.menu_blog_content_settings{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 255px;}
+.menu_blog_content_settings li{float: left;}
+.menu_blog_content_settings .active{float: left;}
+.menu_blog_content_settings li a{ margin: 0 5px; color: #000; font-size: 10px; }
+.menu_blog_content_settings .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
+.menu_blog_content_settings .active a.new{color: #34aa3f;}
+.menu_blog_content_settings li a.new{color: #34aa3f;}
+
 /*      Меню по людям "Все Онлайн Новые"                    */
 .nav_menu_people{margin-left: 30px;}
 .nav_menu_people li{float: left; padding: 0 15px 0 15px; font-size: 18px; }

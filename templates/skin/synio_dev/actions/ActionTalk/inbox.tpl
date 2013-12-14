@@ -1,6 +1,6 @@
 {assign var="sidebarPosition" value='left'}
 {include file='header.tpl' noShowSystemMessage=false}
-
+<div class="wrap">
 {include file='menu.talk.tpl'}
 
 
@@ -76,6 +76,7 @@
 	<div class="notice-empty">{$aLang.talk_inbox_empty}</div>
 {/if}
 
-			
+</div>			
 {include file='paging.tpl' aPaging=$aPaging}
+
 {include file='footer.tpl'}

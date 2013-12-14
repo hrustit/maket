@@ -25,7 +25,7 @@
 
 
 /* Стили для списка комментариев на странице http://ваш_сайт/comments/ */
-.comments.comment-list .comment { margin-bottom: 50px; padding-left: 0; }
+.comments.comment-list .comment { margin-bottom: 25px; padding-left: 0; }
 .comments.comment-list .comment .comment-avatar { position: static; width: 16px; height: 16px; vertical-align: middle; }
 .comments.comment-list .comment .comment-content { margin-bottom: 5px; }
 .comments.comment-list .comment .comment-info li.vote .vote-count { margin-right: 0; }
@@ -67,11 +67,11 @@
 
 /* Info Block */
 .comment .comment-info { padding: 0 70px 2px 5px; line-height: 12px; position: relative; top: -2px; overflow: hidden; zoom: 1; font-size: 11px; }
-.comment .comment-info li { float: left; height: 18px; padding-top: 3px; margin-right: 13px; }
+.comment .comment-info li { float: left; height: 20px; padding-top: 4px; margin-right: 13px; }
 .comment .comment-info li a {  }
 .comment .comment-info li a.link-dotted 		{ color: #727a90; text-decoration: none; border-bottom: 1px dotted #727a90; }
 .comment .comment-info li a.link-dotted:hover { color: #f00; border-color: #f00; }
-.comment .comment-info li.comment-author a { font-weight: bold; color: #727fa0; }
+.comment .comment-info li.comment-author a { font-weight: bold; color: #727fa0; position: relative; top: -3px;}
 .comment .comment-info li.comment-author.comment-topic-author a { color: #4b5468; }
 .comment .comment-info li.comment-author.comment-topic-author { 
 

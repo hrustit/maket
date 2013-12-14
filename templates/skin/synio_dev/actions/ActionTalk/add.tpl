@@ -1,6 +1,6 @@
 {assign var="sidebarPosition" value='left'}
 {include file='header.tpl'}
-
+<div class="wrap">
 {include file='menu.talk.tpl'}
 
 
@@ -35,5 +35,5 @@
 </form>
 
 {hook run='talk_add_end'}
-
+</div>
 {include file='footer.tpl'}
