@@ -16,7 +16,7 @@
 
 		<ul class="topic-info">
                     
- {if !$bTopicList}<!--   Если мы НЕ на странице со списком топиков  то не показываем рейтинг  -->
+ {if !$bTopicList}{*   Если мы НЕ на странице со списком топиков  то не показываем рейтинг *}
 			{if $oVote || ($oUserCurrent && $oTopic->getUserId() == $oUserCurrent->getId()) || strtotime($oTopic->getDateAdd()) < $smarty.now-$oConfig->GetValue('acl.vote.topic.limit_time')}
 				{assign var="bVoteInfoShow" value=true}
 			{/if}
@@ -101,7 +101,11 @@
 				</time>
 			</li>
 			
-		
+			
+			<li class="topic-info-favourite" onclick="return ls.favourite.toggle({$oTopic->getId()},$('#fav_topic_{$oTopic->getId()}'),'topic');">
+				<i id="fav_topic_{$oTopic->getId()}" class="favourite {if $oUserCurrent && $oTopic->getIsFavourite()}active{/if}"></i>
+				<span class="favourite-count" id="fav_count_topic_{$oTopic->getId()}">{if $oTopic->getCountFavourite()>0}{$oTopic->getCountFavourite()}{/if}</span>
+			</li>
 			{if $bTopicList}
 				<li class="topic-info-comments">
 					{if $oTopic->getCountCommentNew()}

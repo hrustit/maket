@@ -1,6 +1,7 @@
 {assign var="noSidebar" value=true}
 {include file='header.tpl' menu="stream"}
 
+<div class="wrap">
 <h2 class="page-header">{$aLang.stream_menu}</h2>
 
 {if count($aStreamEvents)}
@@ -15,6 +16,6 @@
 {else}
     {$aLang.stream_no_events}
 {/if}
-
+</div>
 
 {include file='footer.tpl'}

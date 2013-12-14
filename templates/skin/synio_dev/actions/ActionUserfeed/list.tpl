@@ -2,7 +2,6 @@
 {include file='topic_list.tpl'}
 
 
-
 {if count($aTopics)}
     {if !$bDisableGetMoreButton}
         <div id="userfeed_loaded_topics"></div>

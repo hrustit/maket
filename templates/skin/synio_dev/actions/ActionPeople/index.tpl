@@ -1,5 +1,6 @@
 {include file='header.tpl' menu='people'}
 
+<div class="wrap">
 <h2 class="page-header">{$aLang.people}</h2>
 
 <form action="" method="POST" id="form-users-search" onsubmit="return false;" class="search-item search-item-abc">
@@ -23,5 +24,5 @@
 	{router page='people' assign=sUsersRootPage}
 	{include file='user_list.tpl' aUsersList=$aUsersRating bUsersUseOrder=true sUsersRootPage=$sUsersRootPage}
 </div>
-
+</div>
 {include file='footer.tpl'}

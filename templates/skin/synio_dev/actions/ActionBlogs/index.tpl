@@ -1,5 +1,6 @@
 {include file='header.tpl' sMenuHeadItemSelect="blogs"}
 
+<div class="wrap">
 <h2 class="page-header">{$aLang.blogs}</h2>
 
 <form action="" method="POST" id="form-blogs-search" onsubmit="return false;" class="search-item">
@@ -16,5 +17,5 @@
 	{include file='blog_list.tpl' bBlogsUseOrder=true sBlogsRootPage=$sBlogsRootPage}
 	{include file='paging.tpl' aPaging=$aPaging}
 </div>
-
+</div>
 {include file='footer.tpl'}

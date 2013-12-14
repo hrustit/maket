@@ -5,7 +5,7 @@
 {assign var="oVote" value=$oUserProfile->getVote()}
 			
 
-			
+<div class="wrap">		
 {include file='actions/ActionProfile/profile_top.tpl'}
 
 
@@ -48,7 +48,7 @@
 {if $iCountWall-count($aWall)}
 	<a href="#" onclick="return ls.wall.loadNext();" id="wall-button-next" class="stream-get-more"><span class="wall-more-inner">{$aLang.wall_load_more} (<span id="wall-count-next">{$iCountWall-count($aWall)}</span>)</span></a>
 {/if}
-
+</div>
 
 
 {include file='footer.tpl'}
