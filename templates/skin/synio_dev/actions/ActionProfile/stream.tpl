@@ -1,6 +1,7 @@
 {assign var="sidebarPosition" value='left'}
 {include file='header.tpl' menu='people'}
 
+<div class="wrap">
 {include file='actions/ActionProfile/profile_top.tpl'}
 
 
@@ -16,7 +17,7 @@
 {else}
 	{$aLang.stream_no_events}
 {/if}
-
+</div>
 
 
 {include file='footer.tpl'}

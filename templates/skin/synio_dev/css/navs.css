@@ -90,9 +90,8 @@
 .menu_blog_content .active a.new{color: #34aa3f;}
 .menu_blog_content .inactive a.new{color: #34aa3f;}
 
-/*     Меню "интересные, новые, обсуждаемые, топ"          */
-.menu_blog_content_favorite{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 255px;}
-.menu_blog_content_favorite{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 255px;}
+/*     Меню "избранные топики, избранные комментарии"          */
+.menu_blog_content_favorite{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 270px;}
 .menu_blog_content_favorite .inactive{float: left;}
 .menu_blog_content_favorite .active{float: left;}
 .menu_blog_content_favorite .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
