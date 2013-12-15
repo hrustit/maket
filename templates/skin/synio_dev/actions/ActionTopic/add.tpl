@@ -50,9 +50,12 @@
 		<br />
 	{/if}
 	
+	{if $oConfig->get('module.topic.allow_empty_tags')==false}
 	<p><label for="topic_tags">{$aLang.topic_create_tags}:</label>
 	<input type="text" id="topic_tags" name="topic_tags" value="{$_aRequest.topic_tags}" class="input-text input-width-full autocomplete-tags-sep" />
 	<small class="note">{$aLang.topic_create_tags_notice}</small></p>
+        {/if}
+	
 
 	
 	<p><label><input type="checkbox" id="topic_forbid_comment" name="topic_forbid_comment" class="input-checkbox" value="1" {if $_aRequest.topic_forbid_comment==1}checked{/if} />

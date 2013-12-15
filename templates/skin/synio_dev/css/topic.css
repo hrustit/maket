@@ -51,8 +51,9 @@
 .topic .topic-footer .topic-info li.topic-info-author a:hover 	{ }
 .topic .topic-footer .topic-info li.topic-info-author a img		{ width: 13px; height: 13px;  margin-right: 2px; position: relative; top: 2px; }
 
-.topic .topic-footer .topic-info li.topic-info-date				{ color: #7b848d;  padding: 8px 0 0 0; }
+.topic .topic-footer .topic-info li.topic-info-date				{ color: #7b848d;  padding: 3px 0 0 0; }
 .read_more_li{margin-top: 3px; margin-left: 0px;}
+.topic_cloc_img{position: relative; top: 2px;}
 
 .topic .topic-footer .topic-info li.topic-info-share			{ padding: 6px; cursor: pointer; border-radius: 4px; position: relative; }
 .topic .topic-footer .topic-info li.topic-info-share i			{ float: left; }

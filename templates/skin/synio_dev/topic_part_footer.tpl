@@ -95,9 +95,9 @@
 				<a rel="author" href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a>
 			</li>
 			<li class="topic-info-date">
-                            
+                                <img src="{cfg name='path.static.skin'}/images/cloc.png" class="topic_cloc_img" title="{date_format date=$oTopic->getDateAdd() format='j F Y, H:i'}">
 				<time datetime="{date_format date=$oTopic->getDateAdd() format='c'}" title="{date_format date=$oTopic->getDateAdd() format='j F Y, H:i'}">
-					{date_format date=$oTopic->getDateAdd() hours_back="12" minutes_back="60" now="60" day="day H:i" format="j F Y, H:i"}
+                                	{date_format date=$oTopic->getDateAdd() hours_back="12" minutes_back="60" now="60" day="day H:i" format="j F Y, H:i"}
 				</time>
 			</li>
 			
