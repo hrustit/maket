@@ -86,14 +86,14 @@
                         <a href="#"><img src="{cfg name='path.static.skin'}/images/twitter.png" alt="Яндекс" /></a>
                         <a href="#"><img src="{cfg name='path.static.skin'}/images/vk.png" alt="Яндекс" /></a>
                         <a href="#"><img src="{cfg name='path.static.skin'}/images/google-plus.png" alt="Яндекс" /></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/rss.png" alt="Яндекс" /></a>                        
+                        <a href="#" onclick="return ls.toolbar.up.goUp();" title="{$aLang.toolbar_scrollup_go}"><img src="{cfg name='path.static.skin'}/images/rss.png" alt="Яндекс" /></a>                        
                     </div>
                 </div>        
 </div> <!-- /container -->
 
-{include file='toolbar.tpl'}
+
 
 {hook run='body_end'}
-
+{include file='toolbar.tpl'}
 </body>
 </html>

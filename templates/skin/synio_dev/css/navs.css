@@ -221,7 +221,7 @@
 .dropdown-menu-create li.active a	{ color: #aaa; border-color: #aaa; }
 
 /* блок "Топ" в топиках*/
-.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 40px; right: -10px; margin: 0 0 1px 0 ; display: none; }
+.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 25px; right: -10px; margin: 0 0 1px 0 ; display: none; }
 .nav.nav-pills.nav-pills-dropdown li { margin: 0; }
 /* блок "Топ" в блоге*/
 .nav.nav-pills.nav-pills-dropdown.blog_tpl { position: absolute; top: 0px; right: 0px; margin: 0 0 1px 0 ; display: none; }

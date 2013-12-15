@@ -433,5 +433,7 @@ background: url(../images/offers.png) 50% 10% no-repeat;
 .help .help-item h4 a { color: #727a90; border-bottom: 1px dotted #727a90; }
 .link-dotted.help-link { font-size: 11px; color: #000; border-color: #000; }
 
-/* Обертак центрального блока в списке с блогами, профиле пользователя */
+/* Обертак центрального блока в списке с блогами, профиле пользователя и т.д.*/
 .wrap{background: #fff; padding: 10px;}
+
+.up{position: fixed; top: 80%; right: 100px; display:block;}
