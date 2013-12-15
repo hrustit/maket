@@ -8,10 +8,10 @@
             	<div class="copyright">
 			
 			<img src="{cfg name='path.static.skin'}/images/logo_dev.png" alt="{$sHtmlTitle}" class="footer_logo_img"/>
-                        <p class="">
+                        <p>
                             NewsTraveller - это информационно-новостной портал для туристов и путешественников. В NewsTraveller заложена модель взаимопомощи и обмене опыта между людьми.
                         </p>
-                        <p class="">
+                        <p>
                             Основная цель NewsTraveller - помогает в решении задачи людей, путём обмена опыта и имеющихся на базе проекта сервисов. Именно для этого мы создавали свой проект.
                         </p>
 		</div>
@@ -81,12 +81,12 @@
                         <p><a href="#">Мобильная версия</a></p>
                     </div>
                     <div class="shared_buttons">
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/yandex.png" alt="Яндекс" class=""/></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/facebook.png" alt="Яндекс" class=""/></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/twitter.png" alt="Яндекс" class=""/></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/vk.png" alt="Яндекс" class=""/></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/google-plus.png" alt="Яндекс" class=""/></a>
-                        <a href="#"><img src="{cfg name='path.static.skin'}/images/rss.png" alt="Яндекс" class=""/></a>                        
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/yandex.png" alt="Яндекс" /></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/facebook.png" alt="Яндекс" /></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/twitter.png" alt="Яндекс" /></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/vk.png" alt="Яндекс" /></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/google-plus.png" alt="Яндекс" /></a>
+                        <a href="#"><img src="{cfg name='path.static.skin'}/images/rss.png" alt="Яндекс" /></a>                        
                     </div>
                 </div>        
 </div> <!-- /container -->
