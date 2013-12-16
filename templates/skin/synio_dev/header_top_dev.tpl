@@ -22,7 +22,7 @@
 	{if $oUserCurrent}
 		<div class="dropdown-user" id="dropdown-user">	
                     <div class="username_dev">
-                        <a href="{$oUserCurrent->getUserWebPath()}" >{$oUserCurrent->getLogin()}</a>
+                        <a href="#" id="dropdown-user-trigger">{$oUserCurrent->getLogin()}<img src="{cfg name='path.static.skin'}/images/triangle.png" alt="menu" class="arrow" /></a>
                         <div class="rating_blok">
                             <div class="rating_blok_left">
                                 <span class="strength" title="{$aLang.user_skill}">{$oUserCurrent->getSkill()}</span>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     
-                    <div class="dropdown-user-trigger" id="dropdown-user-trigger"><img src="{cfg name='path.static.skin'}/images/triangle.png" alt="menu" /></div>
+                    {*<div class="dropdown-user-trigger" id="dropdown-user-trigger"><img src="{cfg name='path.static.skin'}/images/triangle.png" alt="menu" /></div>*}
                     <div class="avatar_dev"><a href="{$oUserCurrent->getUserWebPath()}"><img src="{$oUserCurrent->getProfileAvatarPath(48)}" alt="avatar" class="img_avatar" /></a></div>	
                     <div style="clear: left"></div>
                     

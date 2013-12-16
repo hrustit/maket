@@ -432,7 +432,7 @@ jQuery(document).ready(function($){
 		var menu 	= $('#dropdown-user-menu');
 		var pos 	= $('#dropdown-user').offset();
 //Положение выпадающего меню изменяется здесь!!!
-		menu.appendTo('body').css({ 'left': pos.left - 50, 'top': $('#dropdown-user').height() - 20, 'min-width': $('#dropdown-user').outerWidth(), 'display': 'none' });
+		menu.appendTo('body').css({ 'left': pos.left + 150, 'top': $('#dropdown-user').height() - 20, 'min-width': 200, 'display': 'none' });
 
 		trigger.click(function(){
 			menu.slideToggle();
