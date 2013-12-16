@@ -142,7 +142,7 @@
 .menu_blog_content_settings li a.new{color: #34aa3f;}
 
 /*     Меню "Текстовый, Опрос, Ссылка, Фотосет"          */
-.menu_blog_content_created{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 220px;}
+.menu_blog_content_created{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 240px;}
 .menu_blog_content_created li{float: left;}
 .menu_blog_content_created .active{float: left;}
 .menu_blog_content_created li a{ margin: 0 5px; color: #000; font-size: 10px; }
