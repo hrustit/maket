@@ -81,7 +81,7 @@
 .nav_menu_blog li a{color: #4c749f; text-transform: uppercase;}
 .nav_menu_blog li.active a{color: #34aa3f; text-transform: uppercase; text-decoration: none;}
 
-/*     Меню "интересные, новые, обсуждаемые, топ"          */
+/*     Меню "интересные, новые, обсуждаемые, топ"   от вкладки "Все"        */
 .menu_blog_content{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 285px;}
 .menu_blog_content .inactive{float: left;}
 .menu_blog_content .active{float: left;}
@@ -89,6 +89,30 @@
 .menu_blog_content .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
 .menu_blog_content .active a.new{color: #34aa3f;}
 .menu_blog_content .inactive a.new{color: #34aa3f;}
+
+.arrou_nav_index{width: 14px; height: 7px; margin-bottom: 6px; position: relative; left: 70px; }
+
+/*     Меню "интересные, новые, обсуждаемые, топ"   от вкладки "КОЛЛЕКТИВНЫЕ"        */
+.menu_blog_content_blog{margin: 0 0 10px 60px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 285px;}
+.menu_blog_content_blog .inactive{float: left;}
+.menu_blog_content_blog .active{float: left;}
+.menu_blog_content_blog .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
+.menu_blog_content_blog .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
+.menu_blog_content_blog .active a.new{color: #34aa3f;}
+.menu_blog_content_blog .inactive a.new{color: #34aa3f;}
+
+.arrou_nav_blog{width: 14px; height: 7px; margin-bottom: 6px; position: relative; left: 190px; }
+
+/*     Меню "интересные, новые, обсуждаемые, топ"   от вкладки "КОЛЛЕКТИВНЫЕ"        */
+.menu_blog_content_log{margin: 0 0 10px 175px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 285px;}
+.menu_blog_content_log .inactive{float: left;}
+.menu_blog_content_log .active{float: left;}
+.menu_blog_content_log .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
+.menu_blog_content_log .active a{ margin: 0 5px; color: #000; font-size: 10px; text-decoration: none; font-weight: bold; }
+.menu_blog_content_log .active a.new{color: #34aa3f;}
+.menu_blog_content_log .inactive a.new{color: #34aa3f;}
+
+.arrou_nav_log{width: 14px; height: 7px; margin-bottom: 6px; position: relative; left: 375px; }
 
 /*     Меню "избранные топики, избранные комментарии"          */
 .menu_blog_content_favorite{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 270px;}
@@ -221,7 +245,7 @@
 .dropdown-menu-create li.active a	{ color: #aaa; border-color: #aaa; }
 
 /* блок "Топ" в топиках*/
-.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 25px; right: -10px; margin: 0 0 1px 0 ; display: none; }
+.nav.nav-pills.nav-pills-dropdown { position: absolute; top: 40px; right: -10px; margin: 0 0 1px 0 ; display: none; }
 .nav.nav-pills.nav-pills-dropdown li { margin: 0; }
 /* блок "Топ" в блоге*/
 .nav.nav-pills.nav-pills-dropdown.blog_tpl { position: absolute; top: 0px; right: 0px; margin: 0 0 1px 0 ; display: none; }

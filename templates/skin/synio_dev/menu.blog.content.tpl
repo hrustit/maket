@@ -1,4 +1,6 @@
 {if $sMenuItemSelect=='index'}
+    
+        <div class="arrou_nav_index"><img src="{cfg name='path.static.skin'}/images/arrow_nav.png" ></div>
 	<div class="menu_blog_content">
 		<div {if $sMenuSubItemSelect=='good'}class="active"{else}class="inactive"{/if}><a href="{cfg name='path.root.web'}/">{$aLang.blog_menu_all_good}</a></div>
 		<div {if $sMenuSubItemSelect=='new'}class="active"{else}class="inactive"{/if}>
@@ -13,7 +15,8 @@
 {/if}
 
 {if $sMenuItemSelect=='blog'}
-	<div class="menu_blog_content">
+        <div class="arrou_nav_blog"><img src="{cfg name='path.static.skin'}/images/arrow_nav.png" ></div>
+	<div class="menu_blog_content_blog">
 		<div {if $sMenuSubItemSelect=='good'}class="active"{else}class="inactive"{/if}><a href="{$sMenuSubBlogUrl}">{$aLang.blog_menu_collective_good}</a></div>
 		<div {if $sMenuSubItemSelect=='new'}class="active"{else}class="inactive"{/if}>
 			<a href="{$sMenuSubBlogUrl}newall/" title="{$aLang.blog_menu_top_period_all}">{$aLang.blog_menu_collective_new}</a>
@@ -27,7 +30,8 @@
 {/if}
 
 {if $sMenuItemSelect=='log'}
-	<div class="menu_blog_content">
+        <div class="arrou_nav_log"><img src="{cfg name='path.static.skin'}/images/arrow_nav.png" ></div>
+	<div class="menu_blog_content_log">
 		<div {if $sMenuSubItemSelect=='good'}class="active"{else}class="inactive"{/if}><a href="{router page='personal_blog'}">{$aLang.blog_menu_personal_good}</a></div>
 		<div {if $sMenuSubItemSelect=='new'}class="active"{else}class="inactive"{/if}>
 			<a href="{router page='personal_blog'}newall/" title="{$aLang.blog_menu_top_period_all}">{$aLang.blog_menu_personal_new}</a>
