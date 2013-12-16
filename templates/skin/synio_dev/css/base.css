@@ -74,7 +74,7 @@ h2.header-table span { color: #949aa1; }
 	padding-right: 0px; 
 	padding-left: 0px; 
 	background: #fff;
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#020202',GradientType=0 );
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#020202',GradientType=0 );*/
 
 }
 #header .dropdown-user.opened 							{ background: #fff; }
@@ -216,7 +216,16 @@ h2.header-table span { color: #949aa1; }
 .menu_service_rating .rating:hover{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 .menu_service_special .special:hover{color: #fff; height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 
-.menu_service_posts .posts_active{color: #fff; text-decoration: none; height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
+.menu_service_posts .posts_active{
+    color: #fff; 
+    text-decoration: none; 
+    height: 55px; 
+    display: inline-block; 
+    background: url(../images/menu-li.png) repeat-x; 
+    border-radius: 0 0 6px 6px; 
+    -moz-border-radius:0 0 6px 6px; 
+    -khtml-border-radius: 0 0 6px 6px;
+}
 .menu_service_companions .companions_active{color: #fff; text-decoration: none;  height: 55px; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 .menu_service_maps .maps_active{color: #fff; height: 55px; text-decoration: none;  margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
 .menu_service_reservation .reservation_active{color: #fff; text-decoration: none;  height: 55px; margin: 0 auto; display: inline-block; background: url(../images/menu-li.png) repeat-x; border-radius: 0 0 6px 6px; -moz-border-radius:0 0 6px 6px; -khtml-border-radius: 0 0 6px 6px;}
@@ -436,4 +445,5 @@ background: url(../images/offers.png) 50% 10% no-repeat;
 /* Обертак центрального блока в списке с блогами, профиле пользователя и т.д.*/
 .wrap{background: #fff; padding: 10px;}
 
-.up{position: fixed; top: 80%; right: 100px; display:block;}
+.openid_inject_login a{position: relative; top: 7px; margin-left: 5px;}
+

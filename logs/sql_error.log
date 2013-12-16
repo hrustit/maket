@@ -954,3 +954,48 @@ Array
     [context] => X:\home\maket\www\plugins\aceadminpanel\classes\modules\admin\mapper\Admin.mapper.class.php line 33
 )
 ]
+[2013-12-16 13:31:38][800][5476][ERROR][SQL Error: Table 'social.prefix_openid' doesn't exist at X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.prefix_openid' doesn't exist
+    [query] => SELECT u.* FROM prefix_openid as o, prefix_user as u WHERE openid = 'http://openid.yandex.ru/dobriynickita/' and u.user_id=o.user_id 
+    [context] => X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74
+)
+]
+[2013-12-16 13:31:52][800][8741][ERROR][SQL Error: Table 'social.prefix_openid' doesn't exist at X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.prefix_openid' doesn't exist
+    [query] => SELECT u.* FROM prefix_openid as o, prefix_user as u WHERE openid = 'http://openid.yandex.ru/dobriynickita/' and u.user_id=o.user_id 
+    [context] => X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74
+)
+]
+[2013-12-16 13:33:55][800][8701][ERROR][SQL Error: Table 'social.prefix_openid' doesn't exist at X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.prefix_openid' doesn't exist
+    [query] => SELECT u.* FROM prefix_openid as o, prefix_user as u WHERE openid = 'http://openid.yandex.ru/dobriynickita/' and u.user_id=o.user_id 
+    [context] => X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74
+)
+]
+[2013-12-16 13:34:11][800][9158][ERROR][SQL Error: Table 'social.prefix_openid' doesn't exist at X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.prefix_openid' doesn't exist
+    [query] => SELECT u.* FROM prefix_openid as o, prefix_user as u WHERE openid = 'http://openid.yandex.ru/dobriynickita/' and u.user_id=o.user_id 
+    [context] => X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74
+)
+]
+[2013-12-16 13:38:36][800][5779][ERROR][SQL Error: Table 'social.prefix_openid' doesn't exist at X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74<br>
+Array
+(
+    [code] => 1146
+    [message] => Table 'social.prefix_openid' doesn't exist
+    [query] => SELECT u.* FROM prefix_openid as o, prefix_user as u WHERE openid = 'http://openid.yandex.ru/zdfgz2013/' and u.user_id=o.user_id 
+    [context] => X:\home\maket\www\plugins\openid\classes\modules\openid\mapper\Openid.mapper.class.php line 74
+)
+]

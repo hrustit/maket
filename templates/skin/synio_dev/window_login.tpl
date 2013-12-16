@@ -30,7 +30,7 @@
 			<div class="tab-content js-block-popup-login-content" data-type="login">
 				{hook run='login_popup_begin'}
 				<form action="{router page='login'}" method="post" id="popup-login-form">
-					{hook run='form_login_popup_begin'}
+					{*{hook run='form_login_popup_begin'}*}
 
 					<p><input type="text" name="login" id="popup-login" placeholder="{$aLang.user_login}" class="input-text input-width-full"></p>
 					
@@ -45,6 +45,132 @@
 					<input type="hidden" name="return-path" value="{$PATH_WEB_CURRENT|escape:'html'}">
 				</form>
 				{hook run='login_popup_end'}
+                                
+                                
+             
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <link rel="stylesheet" type="text/css" href="{$aTemplateWebPathPlugin.openid}css/style.css" media="all" />
+
+<div id="vk_api_transport"></div>
+<script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript" charset="windows-1251"></script>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+
+<div class="openid-block">
+	<form method="post" action="{router page='login'}openid/enter/" name="fopenid" id="openid_form">
+		<div style="overflow: hidden; zoom: 1;">
+			<input type="hidden" style="float: left; width: 322px; " class="input-text input-width-300" maxlength="255" name="open_login" id="open_login" />
+			<input type="hidden" name="submit_open_login" id="submit_open_login_hidden" value="go"/>
+			<input type="hidden" value="{$_aRequest.return}" name="return" />
+			<a href="#" style="margin-top: 1px; margin-left: 5px; display: none;" class="button button-primary" onclick="getEl('openid_form').submit(); return false;"><span>{$aLang.plugin.openid.enter}</span></a>
+		</div>
+		
+		<div class="openid-services">
+                    <p class="openid_inject_login">Или войдите через: 
+
+			<a href="javascript: openid_fb()"><img src="{cfg name='path.static.skin'}/images/fb.png" alt="facebook" /></a>
+			<a href="javascript: openid_vk()"><img src="{cfg name='path.static.skin'}/images/vk_opid.png" alt="vkontakte"  /></a>	
+			<a href="javascript: openid_yandex()"><img src="{cfg name='path.static.skin'}/images/ya.png" alt="yandex"  /></a>
+			<a href="javascript: openid_google()"><img src="{cfg name='path.static.skin'}/images/gplus.png"   alt="google"  /></a>
+                        <a href="{router page='login'}openid/" title="{$aLang.plugin.openid.enter_title_alter}" ><img src="{$aTemplateWebPathPlugin.openid}img/openid.png" alt="{$aLang.plugin.openid.openid}" /></a>
+                    </p>
+		</div>					
+	</form>
+</div>
+		
+		
+<script language="JavaScript" type="text/javascript">
+var sVkTransportPath='{cfg name='plugin.openid.vk.transport_path'}';
+var iVkAppId='{cfg name='plugin.openid.vk.id'}';
+var iFbAppId='{cfg name='plugin.openid.fb.id'}';
+var sVkLoginPath='{$aRouter.login}'+'openid/vk/';
+var sFbLoginPath='{$aRouter.login}'+'openid/fb/';
+var sTwitterLoginPath='{$aRouter.login}'+'openid/twitter/?authorize=1';
+{literal}
+	function getEl(id) {
+		return document.getElementById(id);
+	}
+
+	function openid_yandex() {
+		getEl('open_login').value='openid.yandex.ru';		
+		getEl('openid_form').submit();
+	}
+	
+	function openid_rambler() {
+		getEl('open_login').value='rambler.ru';		
+		getEl('openid_form').submit();
+	}
+	
+	function openid_google() {
+		getEl('open_login').value='https://www.google.com/accounts/o8/id';		
+		getEl('openid_form').submit();
+	}
+	
+	function openid_vk() {		
+		VK.Auth.getLoginStatus(function(response) {
+			if (response.session) {
+				window.location = sVkLoginPath;
+			} else {
+				VK.Auth.login(function(response) {
+					if (response.session) {
+						window.location = sVkLoginPath;
+					}
+				},VK.access.FRIENDS);				
+			}
+		});
+	}
+	
+	function openid_fb() {		
+		FB.getLoginStatus(function(response) {
+			if (response.session) {
+				window.location = sFbLoginPath;
+			} else {
+				//FB.login(null,{scope:'read_stream,publish_stream,offline_access,email'});
+				FB.login(function(response) {
+					console.log('fsdfs',response);
+					if (response.authResponse) {
+						window.location = sFbLoginPath;
+					}
+				},{scope:'read_stream,publish_stream,offline_access,email'});
+			}
+		});
+	}
+	
+	function openid_twitter() {
+		window.location = sTwitterLoginPath;
+	}
+	
+	VK.init({apiId: iVkAppId, nameTransportPath: sVkTransportPath});
+	FB.init({appId: iFbAppId, status: true, cookie: true, xfbml: true});
+		
+</script>
+{/literal}
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
 			</div>
 
 
@@ -75,7 +201,7 @@
 
 				{hook run='registration_begin' isPopup=true}
 				<form action="{router page='registration'}" method="post" id="popup-registration-form">
-					{hook run='form_registration_begin' isPopup=true}
+					
 
 					<p>
 					<input type="text" name="login" placeholder="{$aLang.registration_login}" id="popup-registration-login" value="{$_aRequest.login}" class="input-text input-width-300 js-ajax-validate" />

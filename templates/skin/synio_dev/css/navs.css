@@ -82,7 +82,7 @@
 .nav_menu_blog li.active a{color: #34aa3f; text-transform: uppercase; text-decoration: none;}
 
 /*     Меню "интересные, новые, обсуждаемые, топ"          */
-.menu_blog_content{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 255px;}
+.menu_blog_content{margin: 0 0 10px 0px; padding-left: 5px; border: 1px solid #ddd; border-radius: 5px; background: #f5f5f5; width: 285px;}
 .menu_blog_content .inactive{float: left;}
 .menu_blog_content .active{float: left;}
 .menu_blog_content .inactive a{ margin: 0 5px; color: #000; font-size: 10px; }
